@@ -4,12 +4,12 @@
 <?php echo $this->element('Default/metaTags') ?>
     <title><?php echo $defaultPageTitle ?></title>
 <?php echo $this->Html->css(array(
+    'bootstrap.min.css',
     'bootstrap-grid.min.css',
     'base.css',
     'style.css'
 )) ?>
-<?php echo $this->fetch('css') ?>
-<?php echo $this->fetch('script') ?>
+<?php echo $this->fetch('cssTop') ?>
 </head>
 <body>
     <?php echo $this->fetch('content') ?>
