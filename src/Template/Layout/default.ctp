@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 <?php echo $this->element('Default/metaTags') ?>
     <title><?php echo $defaultPageTitle ?></title>
