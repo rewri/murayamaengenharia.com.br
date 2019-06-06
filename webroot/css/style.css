@@ -1,0 +1,47 @@
+nav .nav-item {
+    padding: .5rem .4rem !important;
+}
+
+nav .nav-link {
+    font-size: 14px !important;
+    color: #e0e0e0 !important;
+    transition: all .2s;
+}
+
+nav .navbar-nav {
+    padding-right: 20px;
+}
+
+nav .main-logo {
+    height: 70px;
+}
+
+/* Small devices */
+@media screen and (max-width: 700px) {
+
+    section .navbar {
+        height: 70px;
+        display: flex;
+    }
+
+    section .navbar-collapse {
+        border-radius: 5px;
+        background-image: linear-gradient(rgb(19, 30, 44), rgba(0, 0, 0, .99));
+        padding-left: 10px;
+        z-index: 999;
+        color: #fff;
+    }
+
+    nav .main-logo {
+        height: 50px;
+    }
+
+    nav .nav-item {
+        padding: .1rem 0 !important;
+    }
+
+    nav .nav-link {
+        font-size: 15px !important;
+    }
+
+}

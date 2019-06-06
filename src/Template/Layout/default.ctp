@@ -4,8 +4,9 @@
 <?php echo $this->element('Default/metaTags') ?>
     <title><?php echo $defaultPageTitle ?></title>
 <?php echo $this->Html->css(array(
-    'bootstrap.min.css',
     'bootstrap-grid.min.css',
+    'bootstrap.min.css',
+    'fontawesome-all.min.css',
     'base.css',
     'style.css'
 )) ?>
@@ -16,6 +17,7 @@
     <?php echo $this->Html->script(array(
         'jquery.min.js',
         'bootstrap.bundle.min.js',
+        'fontawesome.min.js',
     )) ?>
     <?php echo $this->fetch('scriptBottom') ?>
 </body>

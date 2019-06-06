@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rewri/murayamaengenharia.com.br#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1"
   }
