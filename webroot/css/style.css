@@ -26,8 +26,9 @@ nav .main-logo {
     }
 
     section .navbar-collapse {
-        border-radius: 5px;
-        background-image: linear-gradient(rgb(19, 30, 44), rgba(0, 0, 0, .99));
+        border-radius: 2px;
+        /*background-image: linear-gradient(rgb(19, 30, 44), rgba(0, 0, 0, .99));*/
+        background-color: #3A5784;
         padding-left: 10px;
         z-index: 999;
         color: #fff;
