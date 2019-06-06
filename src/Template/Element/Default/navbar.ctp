@@ -24,22 +24,22 @@
                 <a class="nav-link" href="#"><i class="fas fa-home"></i> <span class="d-sm-none pl-1"> Home</span> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Quem somos</a>
+                <a class="nav-link" href="#">Quem somos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Projetos</a>
+                <a class="nav-link" href="#">Projetos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Clientes</a>
+                <a class="nav-link" href="#">Clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Equipe</a>
+                <a class="nav-link" href="#">Equipe</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Orçamentos</a>
+                <a class="nav-link" href="#">Orçamentos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">&bull; Contato</a>
+                <a class="nav-link" href="#">Contato</a>
             </li>
         </ul>
 

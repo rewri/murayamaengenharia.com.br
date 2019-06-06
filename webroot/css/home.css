@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
 }
 
-section h1 {
+section.hero h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 4.5rem;
@@ -23,10 +23,10 @@ section h1 {
     text-shadow: 1px 1px 1px #000;
     margin: 0;
     margin-bottom: 2rem;
-    padding-top: 6rem;
+    padding-top: 5.3rem;
 }
 
-section p {
+section.hero p {
     font-size: 1.3rem;
     line-height: 1.3;
     text-shadow: 1px 1px 1px #000;
@@ -43,18 +43,18 @@ section p {
         background-position: bottom center;
     }
 
-    section h1 {
+    section.hero h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
         padding-top: 1.5rem;
     }
 
-    section p {
+    section.hero p {
         font-size: 1rem;
         line-height: 1.2;
     }
 
-    section .btn {
+    section.hero .btn {
         margin-left: 3px;
     }
 

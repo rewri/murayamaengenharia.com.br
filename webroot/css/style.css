@@ -3,9 +3,10 @@ nav .nav-item {
 }
 
 nav .nav-link {
-    font-size: 14px !important;
+    font-size: 12px !important;
     color: #e0e0e0 !important;
     transition: all .2s;
+    text-transform: uppercase;
 }
 
 nav .navbar-nav {
