@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
     <?php echo $this->Html->link(
         $this->Html->image('murayama_logo.svg', array('class' => 'main-logo', 'alt' => 'Logo Murayama Engenharia', 'title' => 'Murayama Engenharia')),
@@ -30,20 +30,36 @@
                 <a class="nav-link" href="#">Projetos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Clientes</a>
+                <a class="nav-link" href="#">Orçamentos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Equipe</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Orçamentos</a>
+                <a class="nav-link" href="#">Contato</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#">Trabalhe conosco</a>
             </li>
         </ul>
 
     </div>
 </nav>
+
+<?php $this->Html->scriptStart(['block' => 'scriptBottom']); ?>
+    $(document).ready(function() {
+
+        $(document).on('scroll', function() {
+            if ($(this).scrollTop() >= $('#after-carousel').position().top + 80) {
+                $('.navbar').addClass('solid');
+                $('.main-logo').addClass('solid-logo');
+            } else {
+                $('.navbar').removeClass('solid');
+                $('.main-logo').removeClass('solid-logo');
+            }
+        });
+
+    });
+<?php echo $this->Html->scriptEnd(); ?>
 
 

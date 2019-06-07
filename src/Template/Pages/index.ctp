@@ -1,46 +1,14 @@
 <?php echo $this->Html->css('home', array('block' => 'cssTop')); ?>
+<?php echo $this->element('Default/navbar'); ?>
+<?php echo $this->element('Home/carousel'); ?>
 
-<section class="hero">
-
-    <?php echo $this->element('Default/navbar'); ?>
-
+<section class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-xs-12">
-                <h1>Murayama Engenharia</h1>
-            </div>
-            <div class="col-md-7 col-xs-12">
-                <p>A Murayama nasceu com a missão de atender de maneira diferenciada a cada projeto, pensando na sustentabilidade e responsabilidade social.</p>
-                <a href="" class="btn btn-dark btn-sm mt-1" style="border: 1px solid #fff; padding: 8px 20px; background-color: transparent; font-size: 14px; border-radius: 6px">Solicite um orçamento</a>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section>
-    <div class="container">
-        <?php echo $this->element('Home/services'); ?>
+        <h1 class="display-4">Full Page Image Slider</h1>
+        <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
     </div>
 </section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
