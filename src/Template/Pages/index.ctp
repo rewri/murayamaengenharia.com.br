@@ -9,6 +9,10 @@
     </div>
 </section>
 
+<div class="container">
+    <?php echo $this->element('Home/services'); ?>
+</div>
+
 <br>
 <br>
 <br>
