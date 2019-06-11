@@ -62,7 +62,8 @@
     }
 
 </style>
-<section class="row services">
+<section class="container" style="margin-bottom: 40px">
+<div class="row services">
     <div class="col-md-4 col-xs-12">
 
         <div class="services-card">
@@ -117,4 +118,5 @@
         </div>
 
     </div>
+</div>
 </section>
