@@ -1,13 +1,3 @@
-<div class="container-fluid">
-        <div class="row">
-            <div class="col-md second bg-info">--</div>
-        </div>
-        <div class="row">
-            <div class="col-md second bg-info">--</div>
-        </div>
-</div>
-
-
 <section class="container" style="margin-top: 80px">
     <div class="row">
         <div class="col-md-3 col-xs-6">
