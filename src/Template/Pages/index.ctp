@@ -2,10 +2,10 @@
 <?php echo $this->element('Default/topbar'); ?>
 <?php echo $this->element('Default/navbar'); ?>
 <?php echo $this->element('Home/carousel'); ?>
-<?php //echo $this->element('Home/about'); ?>
-<?php //echo $this->element('Home/services'); ?>
-<?php echo $this->element('Home/numbers'); ?>
-<?php echo $this->element('Home/projects'); ?>
+<?php echo $this->element('Home/about'); ?>
+<?php echo $this->element('Home/services'); ?>
+<?php echo $this->element('Default/numbers'); ?>
+<?php //echo $this->element('Home/projects'); ?>
 
 
 <br>

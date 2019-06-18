@@ -9,6 +9,9 @@
         border-radius: 5px;
         margin: 50px 0 20px 0;
         position: relative;
+        -webkit-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+        -moz-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+        box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
     }
     .services-icon {
         position:absolute;
@@ -64,11 +67,11 @@
 </style>
 <section class="container" style="margin-bottom: 40px">
 <div class="row services">
-    <div class="col-md-4 col-xs-12">
 
+    <div class="col-md-4 col-xs-12">
         <div class="services-card">
             <div class="services-icon">
-                <i class="fas fa-store-alt"></i>
+                <img src="../../img/icons/residencial.svg" width="165px" style="background-color: #fff; padding: 15px 40px 0; display: inline;" alt="">
             </div>
             <div class="services-title">
                 <h2>Residenciais</h2>
@@ -80,13 +83,12 @@
                 </p>
             </div>
         </div>
-
     </div>
-    <div class="col-md-4 col-xs-12">
 
+    <div class="col-md-4 col-xs-12">
         <div class="services-card">
             <div class="services-icon">
-                <i class="fa fa-warehouse"></i>
+                <img src="../../img/icons/alvara.svg" width="160px" style="background-color: #fff; padding: 0 40px; display: inline;" alt="">
             </div>
             <div class="services-title">
                 <h2>Alvarás</h2>
@@ -98,13 +100,12 @@
                 </p>
             </div>
         </div>
-
     </div>
-    <div class="col-md-4 col-xs-12">
 
+    <div class="col-md-4 col-xs-12">
         <div class="services-card">
             <div class="services-icon">
-                <i class="fa fa-building"></i>
+                <img src="../../img/icons/comercial.svg" width="145px" style="background-color: #fff; padding: 0 40px; display: inline;" alt="">
             </div>
             <div class="services-title">
                 <h2>Comerciais</h2>
@@ -116,7 +117,11 @@
                 </p>
             </div>
         </div>
-
     </div>
+
+    <div class="clearfix"></div>
+
+
+
 </div>
 </section>

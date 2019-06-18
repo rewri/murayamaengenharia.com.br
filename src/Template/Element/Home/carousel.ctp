@@ -44,7 +44,7 @@
         <div class="carousel-item carousel-item-03">
             <div class="carousel-caption text-right">
                 <h2 class="display-4">NOSSAS OBRAS</h2>
-                <p class="lead">Nossos clientes recebem atenção diferenciada, uma parceria de respeito e objetivos mútuos. Esse é nosso papel como construtoresz construir idéias e edificar sonhos.</p>
+                <p class="lead">Nossos clientes recebem atenção diferenciada, uma parceria de respeito e objetivos mútuos. Esse é nosso papel como construtores: construir idéias e edificar sonhos.</p>
                 <?php echo $this->Html->link(
                     'Veja nossos projetos',
                     array(
