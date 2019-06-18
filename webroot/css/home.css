@@ -1,9 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-
-body {
-    background-color: #fff;
-}
 
 .carousel-item {
     height: 520px;

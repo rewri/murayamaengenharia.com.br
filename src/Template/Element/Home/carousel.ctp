@@ -61,11 +61,3 @@
         </div>
     </div>
 </div>
-<?php $this->Html->scriptStart(['block' => 'scriptBottom']); ?>
-    $(document).ready(function() {
-        $('.carousel').carousel({
-            interval: 6000,
-            pause: false
-        });
-    });
-<?php echo $this->Html->scriptEnd(); ?>

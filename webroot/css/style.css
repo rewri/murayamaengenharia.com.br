@@ -1,6 +1,38 @@
+.topbar {
+    background-color: #000;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 40px;
+    z-index: 99999;
+}
+.topbar ul {
+    list-style: none;
+}
+.topbar ul li {
+    color: #ababab;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    padding-right: 10px;
+}
+.topbar ul li .whatsapp-icon {
+    color: #128C7E;
+}
+.topbar ul li.whatsapp a {
+    color: #ababab;
+}
+.topbar ul li.facebook a {
+    color: #3C5A99;
+}
+.topbar ul li.instagram a {
+    color: #9b6954;
+}
+
 nav.navbar {
     background-color: transparent;
     transition: background-color 1s ease 0s;
+    margin-top: 20px;
 }
 
 nav.navbar.solid {
@@ -8,6 +40,7 @@ nav.navbar.solid {
     opacity: .99;
     transition: background-color 1.2s ease 0s;
     box-shadow: 0 0 2px #22304a;
+    margin-top: 0 !important;
 }
 
 nav .navbar-nav {
@@ -15,7 +48,7 @@ nav .navbar-nav {
 }
 
 nav .main-logo {
-    height: 80px;
+    height: 90px;
     transition: height 1.3s;
 }
 
