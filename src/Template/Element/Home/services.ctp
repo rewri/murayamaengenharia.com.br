@@ -3,7 +3,7 @@
         margin-top: 60px
     }
     .services-card {
-        min-height: 210px;
+        min-height: 265px;
         padding: 15px;
         border: 1px solid #dddddd;
         border-radius: 5px;
@@ -28,7 +28,7 @@
         display: inline;
     }
     .services-title h2 {
-        margin: 40px 0 10px 0;
+        margin: 50px 0 20px 0;
         font-size: 1em;
         font-weight: 800;
         color: #3A5784;
@@ -36,10 +36,23 @@
         text-align: center;
     }
     .services-content p {
-        font-size: .9em;
+        font-size: 1em;
         padding: 0;
         margin: 0;
         text-align: left;
+    }
+
+    div.fill {
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden
+    }
+    div.fill img {
+        flex-shrink:0;
+        min-width:100%;
+        min-height:100px;
     }
 
     /* Small devices */
@@ -50,7 +63,7 @@
         }
 
         .services-card {
-            margin: 30px 0 20px 0;
+            margin: 30px 0 40px 0;
             min-height: 80px;
         }
 
@@ -59,7 +72,7 @@
         }
 
         .services-title h2 {
-            margin: 20px 0 5px 0;
+            margin: 50px 0 5px 0;
         }
 
     }
@@ -119,9 +132,50 @@
         </div>
     </div>
 
-    <div class="clearfix"></div>
-
-
-
 </div>
+
+    <div class="container">
+    <div class="row" style="margin-top: 90px">
+        <div class="col-md-3 col-xs-12" style="padding: 0">
+            <div class=fill style="width:100%">
+                <img src="../../img/home/arquitetonico.jpg" height="320px">
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12" style="padding-top: 15px; background-color: #f2f2f2">
+            <h2 style="font-size: 24px; padding-bottom: 15px">&bull; Projeto Arquitetônico</h2>
+            <p style="color: #1d3045; font-weight: 400">O projeto arquitetônico é uma atividade técnica de criação que visa a represetanção gráfica para que a construção se torne tão real quanto o planejado.</p>
+        </div>
+        <div class="col-md-3 col-xs-12" style="padding: 0">
+            <div class=fill style="width:100%">
+                <img src="../../img/home/estrutural.jpg" height="320px">
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12" style="padding-top: 15px; background-color: #f2f2f2">
+            <h2 style="font-size: 24px; padding-bottom: 15px"">&bull; Projeto Estrutural</h2>
+            <p style="color: #1d3045; font-weight: 400">O projeto estrutural determina elementos tais como: fundação, pilares, vigas e alvenaria estrutural. Esse projeto tem como objetivo garantir três
+            fatores fundamentais na construção civil: segurança, economia e durabilidade.</p>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 90px">
+        <div class="col-md-3 col-xs-12 text-right" style="padding-top: 25px; background-color: #f2f2f2">
+            <h2 style="font-size: 24px; padding-bottom: 15px"">&bull; Projeto Hidrossanitário</h2>
+            <p style="color: #1d3045; font-weight: 400">O projeto hidrossanitário contempla todas as etapas de dimensionamento e cálculos para o funcionamento, conforme as normas dos elementos hidráulicos da construção civil.</p>
+        </div>
+        <div class="col-md-3 col-xs-12" style="padding: 0">
+            <div class=fill style="width:100%">
+                <img src="../../img/home/hidrosanitario.png" height="320px">
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 text-right" style="padding-top: 25px; background-color: #f2f2f2">
+            <h2 style="font-size: 24px; padding-bottom: 15px"">&bull; Projeto Elétrico</h2>
+            <p style="color: #1d3045; font-weight: 400">O projeto de instalações elétricas busca soluções e técnicas executivas que visam sempre a otimização de suas instalações. Nesse contexto, a edificação irá
+            minimizar ao máximo o custo de manutenção e consumo de energia elétrica.</p>
+        </div>
+        <div class="col-md-3 col-xs-12" style="padding: 0;">
+            <div class=fill style="width:100%">
+                <img src="../../img/home/eletrico.jpg" height="320px">
+            </div>
+        </div>
+    </div>
+    </div>
 </section>

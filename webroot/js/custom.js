@@ -50,7 +50,38 @@ $(document).ready(function() {
         });
     }
 
+    // WhatsApp
+    function initWhatsAppButton() {
+        const whatsBtn = $('#whatsButton');
+        whatsBtn.hide();
+        whatsBtn.floatingWhatsApp({
+            phone: '5514996635051 ',
+            popupMessage: 'Olá, como podemos ajudar?',
+            message: "Olá, gostaria de solicitar um orçamento.",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Murayama Engenharia',
+            headerColor: '#128C7E',
+            backgroundColor: '#128C7E',
+            buttonImage: '<img src="../img/whatsapp.svg" alt="WhatsApp" />'
+        });
+
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 370) {
+                whatsBtn.fadeIn();
+            } else {
+                whatsBtn.fadeOut();
+            }
+        });
+    }
+
     initNumbersCount();
+    initWhatsAppButton();
+
+
+
+
 
 
 });

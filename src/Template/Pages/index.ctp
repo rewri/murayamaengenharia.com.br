@@ -7,6 +7,7 @@
 <?php echo $this->element('Default/numbers'); ?>
 <?php //echo $this->element('Home/projects'); ?>
 
+<div id="whatsButton"></div>
 
 <br>
 <br>

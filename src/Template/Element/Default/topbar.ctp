@@ -3,6 +3,9 @@
     <div class="row">
         <div class="col-md-12 text-right">
             <ul>
+                <li class="whatsapp">
+                    <a href="https://goo.gl/maps/ZPXZtSzpSNJhaDH26" title="Ver no Google Maps" target="_blank">Rua João Passos, 2010, Centro - Botucatu/SP</a>
+                </li>
                 <li><i class="fas fa-phone"></i> +55 (14) 3813.6812</li>
                 <li class="whatsapp">
                     <a href="https://web.whatsapp.com/send?phone=5514996635051&text=<?php echo $whatsAppMessage; ?>" title="Chamar no Whats" target="_blank">

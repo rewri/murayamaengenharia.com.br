@@ -7,8 +7,9 @@
     'bootstrap-grid.min.css',
     'bootstrap.min.css',
     'fontawesome-all.min.css',
+    'floating-wpp.css',
     'base.css',
-    'style.css'
+    'style.css',
 )) ?>
     <?php echo $this->fetch('cssTop') ?>
 </head>
@@ -18,6 +19,7 @@
         'jquery.min.js',
         'bootstrap.bundle.min.js',
         'fontawesome.min.js',
+        'floating-wpp.js',
         'custom.js',
         'home.js',
     )) ?>
