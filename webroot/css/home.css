@@ -11,16 +11,16 @@
 }
 
 .carousel-item-01 {
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/A.jpg');*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/otimized/_A.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_A.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_A.jpg');*/
 }
 .carousel-item-02 {
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/B.jpg');*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/otimized/_B.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_B.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_B.jpg');*/
 }
 .carousel-item-03 {
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/C.jpg');*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/otimized/_C.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_C.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_C.jpg');*/
 }
 
 #carouselHeader h1, #carouselHeader h2 {
@@ -77,6 +77,90 @@
     background-color: #fff;
 }
 
+/* Serviços */
+#services {
+    margin-top: 60px;
+    margin-bottom: 40px
+}
+#services .services-card {
+    min-height: 265px;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 50px 0 20px 0;
+    position: relative;
+    -webkit-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+    -moz-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+    box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+}
+#services .services-icon {
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    color: #3A5784;
+    background-color: #fff;
+    padding: 0 40px;
+    display: inline;
+}
+#services .services-title h2 {
+    margin: 35px 0 20px 0;
+    font-size: 1em;
+    font-weight: 800;
+    color: #3A5784;
+    text-transform: uppercase;
+    text-align: center;
+}
+#services .services-content p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Tipos de projetos */
+#project_types #project_types_top {
+    margin-top: 90px;
+}
+#project_types #project_types_bottom {
+    margin-bottom: 90px;
+}
+#project_types_top .project_types_image, #project_types_bottom .project_types_image {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#project_types_top .project_types_image img, #project_types_bottom .project_types_image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100px;
+    height: 330px;
+}
+#project_types .project_types_text {
+    padding-top: 15px;
+    background-color: #f2f2f2;
+}
+#project_types .project_types_text h2 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+#project_types .project_types_text h2 span {
+    font-size: 20px;
+    color: rgba(34, 53, 78, 0.5);
+}
+#project_types .project_types_text p {
+    color: #1d3045;
+    font-weight: 400;
+}
+#project_types #project_types_bottom .project_types_text {
+    padding-top: 25px;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
@@ -95,6 +179,32 @@
         font-size: 1rem;
         line-height: 1.2;
         font-weight: 300;
+    }
+
+    #services {
+        margin-top: 30px;
+        margin-bottom: 40px
+    }
+
+    #services .services-card {
+        margin: 30px 0 40px 0;
+        min-height: 80px;
+    }
+
+    #project_types #project_types_top {
+        margin-top: 10px;
+    }
+    #project_types #project_types_bottom {
+        margin-bottom: 20px;
+    }
+
+    #project_types_top .project_types_image, #project_types_bottom .project_types_image {
+        display: none;
+    }
+
+    #project_types .project_types_text {
+        text-align: left !important;
+        margin-bottom: 30px;
     }
 
 }

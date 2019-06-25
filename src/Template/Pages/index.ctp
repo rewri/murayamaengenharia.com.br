@@ -4,8 +4,9 @@
 <?php echo $this->element('Home/carousel'); ?>
 <?php echo $this->element('Home/about'); ?>
 <?php echo $this->element('Home/services'); ?>
+<?php echo $this->element('Home/project_types'); ?>
 <?php echo $this->element('Default/numbers'); ?>
-<?php //echo $this->element('Home/projects'); ?>
+<?php echo $this->element('Home/projects'); ?>
 
 <div id="whatsButton"></div>
 

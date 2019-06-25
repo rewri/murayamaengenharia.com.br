@@ -7,6 +7,7 @@
     'bootstrap-grid.min.css',
     'bootstrap.min.css',
     'fontawesome-all.min.css',
+    'simple-line-icons.css',
     'floating-wpp.css',
     'base.css',
     'style.css',

@@ -13,7 +13,7 @@
                 A <strong>Murayama Engenharia e Construção</strong> orgulha-se do que faz e o faz com amor e dedicação.
             </p>
                 <?php echo $this->Html->link(
-                    'Conheça mais <i class="fas fa-plus-square" style="padding-left: 8px"></i>',
+                    'Conheça mais <span style="padding-left: 8px" class="icon-plus"></span> ',
                     array(
                         'plugin' => null,
                         'controller' => null,
@@ -27,10 +27,8 @@
                 ); ?>
         </div>
         <div class="col-md-5 col-xs-12 d-none d-md-block text-right" style="padding-top: 20px">
-
             <?php echo $this->Html->image('home/fachada.jpg', array('alt' => 'Fachada Murayama Engenharia', 'style' => 'margin-top: 5px')); ?>
             <div style="height: 270px; width: 395px; border: 1px solid #b9b9b9; background-color: #fafafa; position: absolute; top: 0; left: 30px; z-index: -99"></div>
-
         </div>
     </div>
 </section>
