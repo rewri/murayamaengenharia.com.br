@@ -12,23 +12,20 @@
                 <br>
                 A <strong>Murayama Engenharia e Construção</strong> orgulha-se do que faz e o faz com amor e dedicação.
             </p>
-                <?php echo $this->Html->link(
-                    'Conheça mais <span style="padding-left: 8px" class="icon-plus"></span> ',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
-                    array(
-                        'class' => 'btn btn-dark btn-sm',
-                        'style' => 'background-color: transparent !important; color: #3A5682; padding: 10px 20px; border: 1px solid #3A5682; border-radius: 10px; font-weight: 600; text-transform: uppercase',
-                        'escape' => false
-                    )
-                ); ?>
+            <?php echo $this->Html->link('
+            <button type="button" class="btn btn-outline-secondary text-uppercase">
+                Conheça mais
+            </button>
+            ', array(
+                'controller' => 'Pages',
+                'action' => 'about'
+            ), array(
+                'escape' => false
+            )); ?>
         </div>
-        <div class="col-md-5 col-xs-12 d-none d-md-block text-right" style="padding-top: 20px">
-            <?php echo $this->Html->image('home/fachada.jpg', array('alt' => 'Fachada Murayama Engenharia', 'style' => 'margin-top: 5px')); ?>
-            <div style="height: 270px; width: 395px; border: 1px solid #b9b9b9; background-color: #fafafa; position: absolute; top: 0; left: 30px; z-index: -99"></div>
+        <div class="col-md-5 col-xs-12 d-none d-md-block text-right who-image-div">
+            <?php echo $this->Html->image('home/fachada.jpg', array('alt' => 'Fachada Murayama Engenharia')); ?>
+            <div class="who-image-back"></div>
         </div>
     </div>
 </section>
