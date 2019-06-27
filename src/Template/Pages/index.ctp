@@ -7,6 +7,7 @@
 <?php echo $this->element('Home/project_types'); ?>
 <?php echo $this->element('Default/numbers'); ?>
 <?php echo $this->element('Home/projects'); ?>
+<?php echo $this->element('Home/budget'); ?>
 
 <div id="whatsButton"></div>
 

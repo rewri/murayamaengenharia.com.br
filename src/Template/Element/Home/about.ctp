@@ -1,6 +1,6 @@
 <section class="container">
     <div class="row text-left" id="who">
-        <div class="col-md-12 col-xs-12" >
+        <div class="col-md-12 col-xs-12">
             <h2 class="area-title">Quem somos</h2>
         </div>
         <div class="col-md-7 col-xs-12">
@@ -13,7 +13,7 @@
                 A <strong>Murayama Engenharia e Construção</strong> orgulha-se do que faz e o faz com amor e dedicação.
             </p>
             <?php echo $this->Html->link('
-            <button type="button" class="btn btn-outline-secondary text-uppercase">
+            <button type="button" class="btn btn-outline-secondary text-uppercase btn-more">
                 Conheça mais
             </button>
             ', array(

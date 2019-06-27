@@ -226,6 +226,9 @@ nav .nav-link:hover:after {
     #projects .project-card .project-image {
         height: 120px;
     }
+    #projects .project-card .project-button {
+        width: 100%;
+    }
     #projects .project-button-all {
         width: 100%;
         margin-top: 40px;
