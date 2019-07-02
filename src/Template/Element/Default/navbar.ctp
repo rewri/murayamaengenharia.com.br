@@ -100,7 +100,7 @@
                     )
                 ); ?>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" style="display: none">
                 <?php echo $this->Html->link(
                     'Trabalhe conosco',
                     array(

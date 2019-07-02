@@ -8,42 +8,8 @@
 <?php echo $this->element('Default/numbers'); ?>
 <?php echo $this->element('Home/projects'); ?>
 <?php echo $this->element('Home/budget'); ?>
-
+<?php echo $this->element('Home/testimonials'); ?>
+<?php echo $this->element('Home/video'); ?>
+<?php echo $this->element('Home/contributors'); ?>
+<?php echo $this->element('Default/footer'); ?>
 <div id="whatsButton"></div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
