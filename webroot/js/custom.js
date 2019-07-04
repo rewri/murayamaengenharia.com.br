@@ -14,6 +14,13 @@ $(document).ready(function() {
     // NAVBAR
     function initNavbar() {
 
+        $("#navbar-home").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#topbar").offset().top
+            }, 1200);
+        });
+
+
         $("#navbar-who").click(function() {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $("#who").offset().top - 30

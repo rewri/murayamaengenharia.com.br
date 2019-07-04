@@ -19,14 +19,11 @@
             <li class="nav-item active">
                 <?php echo $this->Html->link(
                     '<i class="fas fa-home"></i> <span class="d-sm-none pl-1"> Home</span> <span class="sr-only">(current)</span>',
-                    array(
-                        'plugin' => null,
-                        'controller' => 'pages',
-                        'action' => 'index'
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-home'
                     )
                 ); ?>
             </li>

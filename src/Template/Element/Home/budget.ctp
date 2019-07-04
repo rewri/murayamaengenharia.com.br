@@ -20,13 +20,13 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group mb-4">
                                 <label for="name">Seu nome</label>
-                                <?php echo $this->Form->input('name', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => 'Nome completo'))?>
+                                <?php echo $this->Form->control('name', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => 'Nome completo'))?>
                             </div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group mb-4">
                                 <label for="phone">Seu telefone</label>
-                                <?php echo $this->Form->input('phone', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxx.xxxx'))?>
+                                <?php echo $this->Form->control('phone', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxx.xxxx'))?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12">
