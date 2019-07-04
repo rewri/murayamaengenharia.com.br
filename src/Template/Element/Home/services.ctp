@@ -26,7 +26,8 @@
                 </div>
                 <div class="services-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem, ea earum eligendi eveniet id inventore labore libero minima nam omnis pariatur qui tempora unde, velit? Eum laborum, non. Neque!
+                        Implantamos projetos industriais, sejam eles novos ou plantas já existentes e contamos com uma equipe para elaboração detalhada,
+                        desde os estudos preliminares, passando por projetos legais (ANVISA, Bombeiros, etc.) até o detalhamento da execução.
                     </p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<?php $whatsAppMessage = "Ol%C3%A1%20Murayama%20Engenheria!%20Gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.%20Pode%2C%20por%20favor%2C%20retornar%20assim%20que%20poss%C3%ADvel%3F%20Obrigado%20%3A)"; ?>
+<?php $whatsAppMessage = "Ol%C3%A1%20Murayama%20Engenharia%2C%20%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.%20Me%20retorne%20assim%20que%20poss%C3%ADvel.%20Obrigado."; ?>
 <div class="container-fluid topbar d-none d-md-block">
     <div class="row">
         <div class="col-md-12 text-right">

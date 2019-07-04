@@ -36,7 +36,11 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     /* Projetos */
     $routes->connect('/projetos', ['controller' => 'Projects', 'action' => 'index']);
-    $routes->connect('/projetos/:slug/:id', ['controller' => 'Projects', 'action' => 'detail'], ['pass' => ['slug', 'id']]);
+    $routes->connect('/projetos/:slug/:id', ['controller' => 'Projects', 'action' => 'view'], ['pass' => ['slug', 'id']]);
+
+    /* Sobre e contato */
+    $routes->connect('/sobre', ['controller' => 'Pages', 'action' => 'about']);
+    $routes->connect('/contato', ['controller' => 'Pages', 'action' => 'contact']);
 
     $routes->fallbacks(DashedRoute::class);
 });

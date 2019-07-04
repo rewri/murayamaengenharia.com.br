@@ -11,6 +11,34 @@ $(document).ready(function() {
         }
     });
 
+    // NAVBAR
+    function initNavbar() {
+
+        $("#navbar-who").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#who").offset().top - 30
+            }, 1200);
+        });
+
+        $("#navbar-projects").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#projects").offset().top - 120
+            }, 1200);
+        });
+
+        $("#navbar-budget, #carousel-budget").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#budget").offset().top - 70
+            }, 1200);
+        });
+
+        $("#navbar-contributors").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#contributors").offset().top - 30
+            }, 1200);
+        });
+    }
+
     // NUMBERS
     function initNumbersCount() {
         var isVisible = true;
@@ -77,6 +105,7 @@ $(document).ready(function() {
         });
     }
 
+    initNavbar();
     initNumbersCount();
     initWhatsAppButton();
 

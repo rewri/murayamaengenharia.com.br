@@ -1,7 +1,7 @@
 <?php
 $link = array(
     'controller' => 'projects',
-    'action' => 'detail',
+    'action' => 'view',
     'slug' => $this->Text->slug(mb_strtolower($data['title'])),
     'id' => $data['id']
 );
@@ -9,7 +9,7 @@ $link = array(
 <div class="row project-card">
     <div class="col-md-12">
         <?php
-        echo $this->Html->link('<div class="project-image" style="background: url(' . $data['image'] . '); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>',
+        echo $this->Html->link('<div class="project-image" style="background: url(../../img/projects/' . $data['image'] . '); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>',
             $link,
             array(
                 'escape' => false,
@@ -33,7 +33,9 @@ $link = array(
         );
         ?>
         </p>
-        <p class="mb-2"><?php echo $data['description']; ?></p>
+        <?php if (!empty($data['subtitle'])) : ?>
+            <p class="mb-2"><?php echo $data['subtitle']; ?></p>
+        <?php endif; ?>
         <p class="pt-0 mt-0">
             <?php
             echo $this->Html->link('
@@ -52,6 +54,3 @@ $link = array(
         </p>
     </div>
 </div>
-
-<?php //debug($data); ?>
-

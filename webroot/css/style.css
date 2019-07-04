@@ -81,6 +81,11 @@ nav .nav-link:hover:after {
     width: 100%;
 }
 
+.star {
+    color: rgba(230, 167, 27, 0.62);
+    font-size: 1.3em;
+}
+
 .area-title {
     color: #181818;
     text-align: center;
@@ -180,6 +185,35 @@ nav .nav-link:hover:after {
     border: 1px solid #b9b9b9;
 }
 
+/* Rodapé */
+#footer {
+    min-height: 530px;
+    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
+    url('../../img/home/otimized/otmz-footer-bg-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 1.3em;
+    border-bottom: 6px solid #000;
+}
+#footer .footer-logo {
+    margin-top: 30px;
+    height: 180px;
+}
+#footer ul {
+    list-style: none;
+}
+#footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#footer .footer-social-icon {
+    color: #fff;
+    font-size: 3em;
+    margin-top: 45px;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
@@ -233,5 +267,24 @@ nav .nav-link:hover:after {
         width: 100%;
         margin-top: 40px;
     }
+
+    #footer {
+        font-size: 1.3em;
+        padding-bottom: 80px;
+    }
+    #footer .footer-logo {
+        margin-top: 30px;
+        height: 100px;
+    }
+    #footer ul {
+        text-align: center;
+    }
+    #footer ul li {
+        padding-bottom: 10px;
+    }
+    #footer .footer-social-icon {
+        font-size: 4em;
+    }
+
 
 }

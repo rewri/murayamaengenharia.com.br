@@ -33,56 +33,44 @@
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Quem somos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-who'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Projetos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-projects'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Orçamentos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-budget'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Equipe',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-contributors'
                     )
                 ); ?>
             </li>
@@ -91,8 +79,8 @@
                     'Contato',
                     array(
                         'plugin' => null,
-                        'controller' => null,
-                        'action' => null
+                        'controller' => 'pages',
+                        'action' => 'contact'
                     ),
                     array(
                         'class' => 'nav-link',
@@ -100,13 +88,13 @@
                     )
                 ); ?>
             </li>
-            <li class="nav-item" style="display: none">
+            <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Trabalhe conosco',
                     array(
                         'plugin' => null,
-                        'controller' => null,
-                        'action' => null
+                        'controller' => 'pages',
+                        'action' => 'contact'
                     ),
                     array(
                         'class' => 'nav-link',

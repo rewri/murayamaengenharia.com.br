@@ -184,11 +184,117 @@
     padding-top: 25px;
 }
 
+/* Orçamento */
+#budget {
+    background-color: #f3f3f3;
+    margin-top: 60px;
+}
+#budget .budget-text {
+    font-size: 1.1em;
+    padding-bottom: 50px;
+    color: #494c50;
+}
+#budget .budget-text ul {
+    list-style: none;
+}
+#budget .area-title {
+    padding-top: 60px;
+}
+#budget #budget-form-div {
+    padding-left: 45px !important;
+}
+#budget #budget-form button {
+    background-color: #3c5985;
+    border: 1px solid #636363;
+}
+#budget #budget-form .form-control {
+    border: 0;
+    border-bottom: 1px solid #3c5985;
+    background-color: #fbfbfb;
+}
+#budget #budget-form .form-control::placeholder {
+    color: #929292;
+    font-size: .9em;
+}
+#budget .budget-social-icon {
+    font-size: 3em;
+    color: #3c5985;
+}
+#budget .budget-social-text, #budget .budget-social-text a {
+    font-size: .9em;
+    text-decoration: none;
+    color: #494c50;
+}
+
+/* Depoimentos */
+#testimonials {
+    margin-top: 80px;
+}
+#testimonials .card {
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    border-radius: 15px;
+}
+#testimonials .card .card-text {
+    font-size: 1em;
+    color: #5a5e63;
+    min-height: 100px;
+}
+#testimonials .card .card-text .quote {
+    font-size: .8em;
+    color: #b0b0b0;
+}
+#testimonials .card .name {
+    font-weight: 600;
+    color: #5a5e63;
+    text-transform: uppercase;
+}
+
+/* Vídeo */
+#video {
+    margin-top: 80px;
+    background-color: #3C5985;
+}
+#video .video-text {
+    padding-top: 45px;
+    padding-right: 55px;
+}
+#video button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Equipe */
+#contributors {
+    margin-bottom: 120px;
+}
+#contributors .area-title {
+    padding-top: 90px;
+}
+#contributors #contributors-carousel {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#contributors #contributors-carousel .carousel-item-contributor {
+    height: 450px;
+    background-color: #fff;
+}
+#contributors #contributors-carousel .card  {
+    border-radius: 15px;
+}
+#contributors #contributors-carousel .card .card-body {
+    min-height: 380px;
+}
+#contributors .contributor-name {
+    font-weight: 600;
+    min-height: 50px;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
     .carousel-item {
-        height: 350px;
+        height: 230px;
         padding-bottom: 3vh;
         background-position: bottom center;
     }
@@ -202,6 +308,10 @@
         font-size: 1rem;
         line-height: 1.2;
         font-weight: 300;
+    }
+
+    #who {
+        padding-top: 30px;
     }
 
     #who .btn-more {
@@ -232,6 +342,44 @@
     #project_types .project_types_text {
         text-align: left !important;
         margin-bottom: 30px;
+    }
+
+    #budget ul {
+        padding-left: 0;
+    }
+
+    #budget #budget-form-div {
+        padding-top: 35px;
+        padding-left: 15px !important;
+    }
+
+    #budget .budget-icon {
+        margin-top: 30px;
+    }
+    #budget .budget-icon span {
+        font-size: 5em !important;
+    }
+    #budget .budget-social-text, #budget .budget-social-text a {
+        font-size: 1em;
+    }
+
+    #testimonials {
+        margin-top: 30px;
+    }
+    #testimonials .card {
+        margin-bottom: 20px;
+    }
+
+    #video {
+        margin-top: 20px;
+    }
+    #video .video-text {
+        padding-top: 35px;
+        padding-right: 0;
+    }
+    #video button {
+        border: 1px solid #fff;
+        color: #fff;
     }
 
 }
