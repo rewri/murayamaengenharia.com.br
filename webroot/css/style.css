@@ -185,6 +185,50 @@ nav .nav-link:hover:after {
     border: 1px solid #b9b9b9;
 }
 
+/* Contato */
+#contact {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+#contact .card {
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    color: #5a5e63;
+    margin-bottom: 20px;
+}
+#contact .card .card-body h3 {
+    font-size: 1.4em;
+}
+#contact .card .card-body h3 span {
+    color: #3c5985;
+}
+#contact .card .card-body {
+    font-size: 1.1em;
+    min-height: 170px;
+}
+#contact .card .card-body a {
+    color: #3c5985;
+    text-decoration: none;
+}
+.carousel-item-small {
+    height: 350px !important;
+}
+
+/* Quem somos detalhes */
+#who-detail {
+    padding-top: 60px;
+    margin-bottom: -60px;
+    font-size: 1.2em;
+}
+#who-detail h3 {
+    color: #1d3045;
+    font-weight: 300;
+}
+.spacer {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
 /* Rodapé */
 #footer {
     min-height: 530px;
@@ -266,6 +310,27 @@ nav .nav-link:hover:after {
     #projects .project-button-all {
         width: 100%;
         margin-top: 40px;
+    }
+
+    .carousel-item-small {
+        height: 250px !important;
+    }
+    #contact .card .card-body {
+        min-height: 100%;
+    }
+    #contact .card .card-body a.mobile-contact-btn {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #3c5985;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #contact .card .card-body p.phone {
+        padding-top: 8px;
+        padding-bottom: 25px;
     }
 
     #footer {

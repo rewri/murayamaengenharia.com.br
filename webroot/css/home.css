@@ -22,6 +22,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_C.jpg');
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_C.jpg');*/
 }
+.carousel-item-04 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_D.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_C.jpg');*/
+}
 
 #carouselHeader h1, #carouselHeader h2 {
     font-family: 'Oswald', sans-serif;

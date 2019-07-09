@@ -9,6 +9,20 @@ $slices = array_chunk($contributors, 4);
             <p class="p-0 m-0">Construir idéias e edificar sonhos.</p>
         </div>
     </div>
+    <div class="row mt-4">
+        <div class="col-md-12 col-xs-12 text-center">
+            <?php echo $this->Html->link('
+            <button type="button" class="btn btn-outline-secondary text-uppercase project-button-all">
+                Conheça nossa equipe
+            </button>
+            ', array(
+                'controller' => 'pages',
+                'action' => 'contributors'
+            ), array(
+                'escape' => false
+            )); ?>
+        </div>
+    </div>
     <div class="row mx-auto my-auto">
         <div id="contributors-carousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner" role="listbox">

@@ -26,7 +26,7 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group mb-4">
                                 <label for="phone">Seu telefone</label>
-                                <?php echo $this->Form->control('phone', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxx.xxxx'))?>
+                                <?php echo $this->Form->control('phone', array('type' => 'tel', 'class' => 'form-control phone', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx', 'pattern' => '[0-9]{2}-[0-9]{4,}-[0-9]{4}'))?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12">
@@ -75,3 +75,19 @@
         </div>
     </div>
 </div>
+<?php echo $this->Html->script('jquery.mask.js', array('block' => 'scriptBottom'))?>
+<?php echo $this->Html->scriptBlock("
+    $(document).ready(function(){
+    
+        var SPMaskBehavior = function (val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+            field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };    
+        $('.phone').mask(SPMaskBehavior, spOptions);
+    
+    });
+", array('block' => 'scriptBottom')); ?>

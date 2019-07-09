@@ -41,6 +41,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     /* Sobre e contato */
     $routes->connect('/sobre', ['controller' => 'Pages', 'action' => 'about']);
     $routes->connect('/contato', ['controller' => 'Pages', 'action' => 'contact']);
+    $routes->connect('/equipe', ['controller' => 'Pages', 'action' => 'contributors']);
 
     $routes->fallbacks(DashedRoute::class);
 });

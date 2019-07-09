@@ -19,33 +19,42 @@
             <li class="nav-item active">
                 <?php echo $this->Html->link(
                     '<i class="fas fa-home"></i> <span class="d-sm-none pl-1"> Home</span> <span class="sr-only">(current)</span>',
-                    'javascript:;',
+                    array(
+                        'plugin' => null,
+                        'controller' => 'pages',
+                        'action' => 'index'
+                    ),
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-home'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Quem somos',
-                    'javascript:;',
+                    array(
+                        'plugin' => null,
+                        'controller' => 'pages',
+                        'action' => 'about'
+                    ),
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-who'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Projetos',
-                    'javascript:;',
+                    array(
+                        'plugin' => null,
+                        'controller' => 'Projects',
+                        'action' => 'index'
+                    ),
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-projects'
                     )
                 ); ?>
             </li>
@@ -63,11 +72,14 @@
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Equipe',
-                    'javascript:;',
+                    array(
+                        'plugin' => null,
+                        'controller' => 'pages',
+                        'action' => 'contributors'
+                    ),
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-contributors'
                     )
                 ); ?>
             </li>

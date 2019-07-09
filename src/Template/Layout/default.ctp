@@ -9,6 +9,7 @@
         'fontawesome-all.min.css',
         'simple-line-icons.css',
         'floating-wpp.css',
+        'lightbox.css',
         'base.css',
         'style.css',
     )) ?>
@@ -21,8 +22,8 @@
     'bootstrap.bundle.min.js',
     'fontawesome.min.js',
     'floating-wpp.js',
+    'lightbox.js',
     'custom.js',
-    'home.js',
 )) ?>
 <?php echo $this->fetch('scriptBottom') ?>
 </body>
