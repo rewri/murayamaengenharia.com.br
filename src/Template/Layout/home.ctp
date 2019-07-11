@@ -11,11 +11,16 @@
     'floating-wpp.css',
     'base.css',
     'style.css',
+    'home.css',
 )) ?>
     <?php echo $this->fetch('cssTop') ?>
 </head>
 <body>
-    <?php echo $this->fetch('content') ?>
+    <?php echo $this->element('Default/topbar'); ?>
+    <?php echo $this->element('Default/navbar'); ?>
+    <?php echo $this->fetch('content'); ?>
+    <?php echo $this->element('Default/footer'); ?>
+    <?php echo $this->element('Default/side-social-icons') ?>
     <?php echo $this->Html->script(array(
         'jquery.min.js',
         'bootstrap.bundle.min.js',

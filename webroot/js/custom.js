@@ -33,6 +33,12 @@ $(document).ready(function() {
             }, 1200);
         });
 
+        $("#navbar-services").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#project_types").offset().top - 120
+            }, 1200);
+        });
+
         $("#navbar-budget, #carousel-budget").click(function() {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $("#budget").offset().top - 70
@@ -45,6 +51,13 @@ $(document).ready(function() {
             }, 1200);
         });
     }
+
+    $(function(){
+        var navMain = $(".navbar-collapse");
+        navMain.on("click", "a:not([data-toggle])", null, function () {
+            navMain.collapse('hide');
+        });
+    });
 
     // WhatsApp
     function initWhatsAppButton() {
@@ -60,7 +73,7 @@ $(document).ready(function() {
             headerColor: '#128C7E',
             backgroundColor: '#128C7E',
             buttonImage: '<img src="http://murayamaengenharia.com.br/novo/img/whatsapp.svg" alt="WhatsApp" />'
-            // buttonImage: '<img src="http://murayamaengenharia.com.br/znovo/img/whatsapp.svg" alt="WhatsApp" />'
+            // buttonImage: '<img src="http://murayamaengenharia.com.br/img/whatsapp.svg" alt="WhatsApp" />'
         });
 
         $(document).scroll(function() {
@@ -73,7 +86,23 @@ $(document).ready(function() {
         });
     }
 
+    // Social icons
+    function initSocialIcons() {
+        const socialIconDiv = $('#social-side-links');
+        socialIconDiv.hide();
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 370) {
+                socialIconDiv.fadeIn();
+            } else {
+                socialIconDiv.fadeOut();
+            }
+        });
+
+    }
+
     initNavbar();
     initWhatsAppButton();
+    initSocialIcons();
 });
 

@@ -10,11 +10,11 @@ class ProjectsController extends AppController
         parent::initialize();
         $this->loadModel('Testimonials');
         $this->loadModel('Projects');
-        $this->loadModel('Contributors');
     }
 
     public function index()
     {
+        $this->set('title', 'Projetos');
         $testimonials = $this->Testimonials->getAll(3)->toArray();
         $this->set(compact('testimonials'));
         $projects = $this->Projects->getAll(15)->toArray();
@@ -28,6 +28,7 @@ class ProjectsController extends AppController
         $project = $this->Projects->get($id, [
             'contain' => ['ProjectCategories', 'ProjectImages']
         ]);
+        $this->set('title', $project['title']);
         $this->set(compact('project', 'testimonials'));
     }
 

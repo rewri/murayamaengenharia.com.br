@@ -1,6 +1,6 @@
 .floating-wpp {
     position: fixed;
-    bottom: 15px;
+    bottom: 190px;
     left: 15px;
     font-size: 14px;
     transition: bottom 0.2s;
@@ -27,7 +27,7 @@
 }
 
 .floating-wpp:hover {
-    bottom: 17px;
+    bottom: 190px;
 }
 
 .floating-wpp:hover .floating-wpp-button {
@@ -44,7 +44,7 @@
     box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.25);
     width: 0px;
     height: 0px;
-    bottom: 0;
+    bottom: 190px;
     opacity: 0;
     transition: bottom 0.1s ease-out, opacity 0.2s ease-out;
     transform-origin: bottom;
@@ -107,4 +107,19 @@
     margin-left: 12px;
     font-size: 0;
     cursor: pointer;
+}
+
+/* Small devices */
+@media screen and (max-width: 700px) {
+    .floating-wpp-button {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .floating-wpp {
+        bottom: 120px;
+        left: 10px;
+    }
+    .floating-wpp:hover {
+        bottom: 120px;
+    }
 }

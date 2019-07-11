@@ -1,5 +1,5 @@
 <?php $whatsAppMessage = "Ol%C3%A1%20Murayama%20Engenharia%2C%20%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.%20Me%20retorne%20assim%20que%20poss%C3%ADvel.%20Obrigado."; ?>
-<div class="container-fluid" id="footer">
+<footer class="container-fluid" id="footer">
     <div class="container text-white">
         <div class="row">
             <div class="col-md-12 col-xs-12 text-center pt-4 pb-5">
@@ -48,4 +48,4 @@
             </div>
         </div>
     </div>
-</div>
+</footer>

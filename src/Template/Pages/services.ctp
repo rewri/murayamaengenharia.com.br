@@ -1,3 +1,13 @@
+<div id="carouselHeader" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item carousel-item-small active carousel-item-02">
+            <div class="carousel-caption text-left">
+                <h1 id="after-carousel">MURAYAMA ENGENHARIA</h1>
+                <p class="lead d-none d-md-block">Profissionalismo e experiência, essa é a MURAYAMA.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="container">
     <div class="container" id="project_types">
         <div class="row" id="project_types_top">
@@ -7,6 +17,14 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <ul class="pb-5">
+                    <li>Gerenciamento completo de obras</li>
+                    <li>Construções residenciais, comerciais e industriais</li>
+                    <li>Instalações elétricas, hidráulicas, carpintaria, pintura, reparos e reformas</li>
+                    <li>Projetos arquitetônicos, hidrossanitários, elétricos e hidráulicos</li>
+                </ul>
+            </div>
             <div class="col-md-3 col-xs-12 p-0">
                 <div class="project_types_image">
                     <?php echo $this->Html->image('home/profissionais.jpg', array('alt' => 'Projetos gerais')); ?>
@@ -15,7 +33,7 @@
             <div class="col-md-3 col-xs-12 project_types_text">
                 <h2><span class="icon-target"></span> Os melhores<br>profissionais</h2>
                 <p>Engenheiros, arquitetos, designers, orçamentistas, eletricistas, encanadores, azulejistas, mestres de obra e engenheiros calculistas.
-                Toda a equipe participa do planejamento, garantindo que cada detalhe seja pensado e executado da melhor forma.
+                    Toda a equipe participa do planejamento, garantindo que cada detalhe seja pensado e executado da melhor forma.
                 </p>
             </div>
 

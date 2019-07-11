@@ -5,22 +5,8 @@ $slices = array_chunk($contributors, 4);
 <div class="container text-center" id="contributors">
     <div class="row">
         <div class="col-md-12 col-xs-12">
-            <h2 class="area-title pb-0">Nossa Equipe</h2>
-            <p class="p-0 m-0">Construir idéias e edificar sonhos.</p>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-md-12 col-xs-12 text-center">
-            <?php echo $this->Html->link('
-            <button type="button" class="btn btn-outline-secondary text-uppercase project-button-all">
-                Conheça nossa equipe
-            </button>
-            ', array(
-                'controller' => 'pages',
-                'action' => 'contributors'
-            ), array(
-                'escape' => false
-            )); ?>
+            <h2 class="area-title pb-0">Equipe</h2>
+            <p class="area-subtitle">Construir idéias e edificar sonhos.</p>
         </div>
     </div>
     <div class="row mx-auto my-auto">
@@ -60,5 +46,19 @@ $slices = array_chunk($contributors, 4);
             </a>
         </div>
         <div class="col-md-5 col-xs-12"></div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12 col-xs-12 text-center">
+            <?php echo $this->Html->link('
+            <button type="button" class="btn btn-outline-secondary text-uppercase project-button-all">
+                Conheça toda nossa equipe
+            </button>
+            ', array(
+                'controller' => 'pages',
+                'action' => 'contributors'
+            ), array(
+                'escape' => false
+            )); ?>
+        </div>
     </div>
 </div>

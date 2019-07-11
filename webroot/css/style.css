@@ -105,6 +105,13 @@ nav .nav-link:hover:after {
     border-bottom: 1px solid #ccc;
 }
 
+.area-subtitle {
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-weight: 300 !important;
+    font-size: 1.1em !important;
+}
+
 #numbers {
     font-family: 'Lato', sans-serif;
     min-height: 280px;
@@ -115,6 +122,7 @@ nav .nav-link:hover:after {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    margin-bottom: 100px;
 }
 
 #numbers .row {
@@ -161,7 +169,7 @@ nav .nav-link:hover:after {
     margin-top: 90px;
 }
 #projects .project-card {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 #projects .project-card .project-image {
@@ -187,14 +195,15 @@ nav .nav-link:hover:after {
 
 /* Contato */
 #contact {
-    margin-top: 60px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
 }
 #contact .card {
     border-radius: 15px;
-    background-color: #f8f8f8;
+    background-color: #fff;
     color: #5a5e63;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 #contact .card .card-body h3 {
     font-size: 1.4em;
@@ -204,11 +213,16 @@ nav .nav-link:hover:after {
 }
 #contact .card .card-body {
     font-size: 1.1em;
-    min-height: 170px;
+    min-height: 190px;
 }
 #contact .card .card-body a {
+    font-size: 1.1em;
     color: #3c5985;
     text-decoration: none;
+}
+#contact .card .card-body .phone-text-icon {
+    font-size: .9em;
+    padding-right: 5px;
 }
 .carousel-item-small {
     height: 350px !important;
@@ -258,6 +272,35 @@ nav .nav-link:hover:after {
     margin-top: 45px;
 }
 
+/* Social Icons */
+#social-side-links {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+}
+
+#social-side-links li a {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
+    margin-bottom: 20px;
+}
+
+#social-side-links li a img {
+    display: block;
+    max-width: 50px;
+    padding: 10px;
+}
+#social-side-links .social-side-facebook a {
+    background-color: #3c5a96;
+}
+#social-side-links .social-side-instagram a {
+    background-color: #C13584;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
@@ -295,6 +338,13 @@ nav .nav-link:hover:after {
         display: inline-block;
         border: 0;
     }
+    .area-subtitle {
+        margin: 0 0 20px 0;
+    }
+
+    #projects {
+        margin: 30px 0 60px 0;
+    }
 
     #projects .project-card {
         text-align: center;
@@ -309,7 +359,7 @@ nav .nav-link:hover:after {
     }
     #projects .project-button-all {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 5px;
     }
 
     .carousel-item-small {
@@ -328,9 +378,30 @@ nav .nav-link:hover:after {
         width: 100%;
         text-align: center;
     }
-    #contact .card .card-body p.phone {
+    #contact .card .card-body p.phone-call {
         padding-top: 8px;
         padding-bottom: 25px;
+    }
+
+    #contact .contact-social p {
+        font-size: .8em;
+        display: inline-block;
+        padding-bottom: 45px;
+    }
+    #contact .contact-social p span {
+        font-size: 2em;
+    }
+
+    #social-side-links {
+        bottom: -10px;
+        left: 10px;
+    }
+    #social-side-links li a {
+        margin-bottom: 8px;
+    }
+
+    #social-side-links li a img {
+        max-width: 45px;
     }
 
     #footer {

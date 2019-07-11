@@ -1,5 +1,11 @@
 <div class="container" id="testimonials">
     <div class="row">
+        <div class="col-md-12 col-xs-12 text-center" >
+            <h2 class="area-title pb-0">Depoimentos</h2>
+            <p class="area-subtitle">Transparência, honestidade, competitividade e inovação</p>
+        </div>
+    </div>
+    <div class="row">
         <?php foreach ($testimonials as $row) : ?>
         <div class="col-md-4 col-xs-12 text-center">
             <div class="card p-3">

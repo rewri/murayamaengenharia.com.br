@@ -28,24 +28,37 @@
                 ); ?>
             </li>
             <li class="nav-item">
+                <?php $whoLink = $isMobile ? array('controller' => 'Pages', 'action' => 'about') : 'javascript:;'; ?>
+                <?php $whoID = $isMobile ? null : 'navbar-who'; ?>
                 <?php echo $this->Html->link(
                     'Quem somos',
-                    'javascript:;',
+                    $whoLink,
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-who'
+                        'id' => $whoID
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
-                    'Projetos',
+                    'Construções',
                     'javascript:;',
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
                         'id' => 'navbar-projects'
+                    )
+                ); ?>
+            </li>
+            <li class="nav-item">
+                <?php echo $this->Html->link(
+                    'Serviços',
+                    'javascript:;',
+                    array(
+                        'class' => 'nav-link',
+                        'escape' => false,
+                        'id' => 'navbar-services'
                     )
                 ); ?>
             </li>
@@ -60,34 +73,22 @@
                     )
                 ); ?>
             </li>
+            <?php $contributorsLink = $isMobile ? array('controller' => 'Pages', 'action' => 'contributors') : 'javascript:;'; ?>
+            <?php $contributorsID = $isMobile ? null : 'navbar-contributors'; ?>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Equipe',
-                    'javascript:;',
+                    $contributorsLink,
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => 'navbar-contributors'
+                        'id' => $contributorsID
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Contato',
-                    array(
-                        'plugin' => null,
-                        'controller' => 'pages',
-                        'action' => 'contact'
-                    ),
-                    array(
-                        'class' => 'nav-link',
-                        'escape' => false
-                    )
-                ); ?>
-            </li>
-            <li class="nav-item" style="display: none">
-                <?php echo $this->Html->link(
-                    'Trabalhe conosco',
                     array(
                         'plugin' => null,
                         'controller' => 'pages',

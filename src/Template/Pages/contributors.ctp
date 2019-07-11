@@ -1,8 +1,3 @@
-<?php
-echo $this->Html->css('home', array('block' => 'cssTop'));
-echo $this->element('Default/topbar');
-echo $this->element('Default/fixed-navbar');
-?>
 <div id="carouselHeader" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item carousel-item-small active carousel-item-03">
@@ -17,7 +12,7 @@ echo $this->element('Default/fixed-navbar');
     <div class="row text-left">
         <div class="col-md-12 col-xs-12 text-center">
             <h2 class="area-title pb-0">Nossa equipe</h2>
-            <p class="p-0 m-0">Construir idéias e edificar sonhos.</p>
+            <p class="area-subtitle">Construir idéias e edificar sonhos.</p>
         </div>
     </div>
     <div class="row mt-5">
@@ -36,5 +31,3 @@ echo $this->element('Default/fixed-navbar');
 </section>
 <?php echo $this->element('Home/testimonials'); ?>
 <?php echo $this->element('Home/budget'); ?>
-<?php echo $this->element('Default/footer'); ?>
-<div id="whatsButton"></div>

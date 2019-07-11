@@ -1,8 +1,3 @@
-<?php
-echo $this->Html->css('home', array('block' => 'cssTop'));
-echo $this->element('Default/topbar');
-echo $this->element('Default/fixed-navbar');
-?>
 <div id="carouselHeader" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item carousel-item-small active carousel-item-02">
@@ -15,22 +10,27 @@ echo $this->element('Default/fixed-navbar');
 </div>
 <section class="container">
     <div class="row text-left" id="who-detail">
-        <div class="col-md-12 col-xs-12">
-            <h2 class="area-title">Quem somos</h2>
+        <div class="col-md-12 col-xs-12 text-center">
+            <h2 class="area-title pb-0">Quem somos</h2>
+            <p class="area-subtitle">Ética, inovação e solidez</p>
         </div>
         <div class="col-md-12 col-xs-12">
             <p class="mb-5">
                 A construção civil tem como característica a execução de obras em locais diversos e cada obra possui um projeto próprio.
                 Pensando nisso a <strong>Murayama Engenharia e Construção</strong> nasceu com a missão de atender de maneira diferenciada a cada projeto, pensando na sustentabilidade e responsabilidade social.
                 <br><br>
-                Nós acreditamos que um trabalho realizado com afinco torna-se muito mais que um trabalho, torna-se uma diversão que gera amigos, conhecimento e resultados.
-                <br>
-                A <strong>Murayama Engenharia e Construção</strong> orgulha-se do que faz e o faz com amor e dedicação.
+                Nós acreditamos que um trabalho realizado com afinco torna-se muito mais que um trabalho e a <strong>Murayama Engenharia e Construção</strong> se orgulha do que faz e faz com amor e dedicação.
             </p>
+            <ul class="pb-5">
+                <li>Gerenciamento completo de obras</li>
+                <li>Construções residenciais, comerciais e industriais</li>
+                <li>Instalações elétricas, hidráulicas, carpintaria, pintura, reparos e reformas</li>
+                <li>Projetos arquitetônicos, hidrossanitários, elétricos e hidráulicos</li>
+            </ul>
         </div>
         <div class="col-md-12 col-xs-12">
             <h3 class="mt-2 mb-2 text-uppercase"><span class="icon-check"></span> UMA JOVEM HISTÓRIA DE SUCESSO</h3>
-            <p class="pb-4">Constituída em 2015, a <strong>Murayama</strong> nasceu com o propósito de atender as necessidades imobiliárias da sociedade em que atua. Possui em seu portfólio a construção de diversas unidades residenciais e comerciais, de diversos tamanhos, formas e conceitos.</p>
+            <p class="pb-4">Constituída em 2013, a <strong>Murayama</strong> nasceu com o propósito de atender as necessidades imobiliárias da sociedade em que atua. Possui em seu portfólio a construção de diversas unidades residenciais e comerciais, de diversos tamanhos, formas e conceitos.</p>
             <h3 class="mt-2 mb-2 text-uppercase"><span class="icon-check"></span> EXPERIÊNCIA E INOVAÇÃO QUE SURPREENDEM</h3>
             <p class="pb-4">Profissionalismo e experiência, essa é a <strong>Murayama</strong>. Empresa jovem e moderna se preocupa em antecipar tendências e construir unidades imobiliárias com qualidade e preços competitivos, sempre mantendo uma equipe de profissionais direcionada para o melhor resultado.</p>
             <h3 class="mt-2 mb-2 text-uppercase"><span class="icon-check"></span> TRADIÇÃO E PERFEIÇÃO</h3>
@@ -39,11 +39,10 @@ echo $this->element('Default/fixed-navbar');
     </div>
 </section>
 <?php echo $this->element('Home/services'); ?>
+<?php echo $this->element('Home/project_types'); ?>
 <?php echo $this->element('Default/numbers'); ?>
 <?php echo $this->element('Home/testimonials'); ?>
 <?php echo $this->element('Home/video'); ?>
 <?php echo $this->element('Home/budget'); ?>
 <?php echo $this->element('Home/projects'); ?>
 <div class="spacer"></div>
-<?php echo $this->element('Default/footer'); ?>
-<div id="whatsButton"></div>

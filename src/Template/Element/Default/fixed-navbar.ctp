@@ -46,7 +46,7 @@
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
-                    'Projetos',
+                    'Construções',
                     array(
                         'plugin' => null,
                         'controller' => 'Projects',
@@ -55,6 +55,19 @@
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
+                    )
+                ); ?>
+            </li>
+            <li class="nav-item">
+                <?php $servicesLink = $isMobile ? array('controller' => 'Pages', 'action' => 'services') : 'javascript:;'; ?>
+                <?php $servicesID = $isMobile ? null : 'navbar-services'; ?>
+                <?php echo $this->Html->link(
+                    'Serviços',
+                    $servicesLink,
+                    array(
+                        'class' => 'nav-link',
+                        'escape' => false,
+                        'id' => $servicesID
                     )
                 ); ?>
             </li>
@@ -86,20 +99,6 @@
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Contato',
-                    array(
-                        'plugin' => null,
-                        'controller' => 'pages',
-                        'action' => 'contact'
-                    ),
-                    array(
-                        'class' => 'nav-link',
-                        'escape' => false
-                    )
-                ); ?>
-            </li>
-            <li class="nav-item" style="display: none">
-                <?php echo $this->Html->link(
-                    'Trabalhe conosco',
                     array(
                         'plugin' => null,
                         'controller' => 'pages',

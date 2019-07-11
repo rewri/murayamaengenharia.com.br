@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row budget-text">
             <div class="col-md-12 col-xs-12">
-                <h2 class="area-title">Orçamento</h2>
+                <h2 class="area-title">Orçamentos</h2>
             </div>
             <div class="col-md-6 col-xs-12">
                 <p class="pb-3">Para atender cada vez melhor os clientes em suas necessidades, a <strong>Murayama Engenharia</strong> oferece:</p>
@@ -15,7 +15,7 @@
                 <p class="pt-2">Por isso, preencha o formulário, solicite agora seu <strong>orçamento grátis e sem compromisso</strong> e brevemente nossos profissionais entrarão em contato com você!</p>
             </div>
             <div class="col-md-6 col-xs-12" id="budget-form-div">
-                <?php echo $this->Form->create('Budget', array('url' => array('action' => 'budget'), 'id' => 'budget-form')); ?>
+                <?php echo $this->Form->create('Budget', array('url' => array('controller' => 'pages', 'action' => 'budget'), 'id' => 'budget-form')); ?>
                     <div class="row">
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group mb-4">
@@ -26,7 +26,7 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group mb-4">
                                 <label for="phone">Seu telefone</label>
-                                <?php echo $this->Form->control('phone', array('type' => 'tel', 'class' => 'form-control phone', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx', 'pattern' => '[0-9]{2}-[0-9]{4,}-[0-9]{4}'))?>
+                                <?php echo $this->Form->control('phone', array('type' => 'tel', 'class' => 'form-control phone', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx'))?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12">
@@ -37,7 +37,14 @@
                         </div>
                         <div class="col-md-12 col-xs-12">
                             <div class="form-group mb-4">
-                                <button type="submit" class="btn btn-info btn-block text-uppercase">Enviar</button>
+                                <button type="submit" class="btn btn-info btn-block text-uppercase" id="budget-form-btn">Enviar</button>
+                                <p class="font-italic d-none" id="budget-form-sending">Enviando...</p>
+                                <div class="alert d-none alert-success" role="alert" id="budget-form-msg-success">
+                                    Contato enviado com sucesso!
+                                </div>
+                                <div class="alert d-none alert-danger" role="alert" id="budget-form-msg-error">
+                                    Erro ao enviar. Atualize a página e tente novamente.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,6 +85,39 @@
 <?php echo $this->Html->script('jquery.mask.js', array('block' => 'scriptBottom'))?>
 <?php echo $this->Html->scriptBlock("
     $(document).ready(function(){
+    
+        $('#budget-form').submit(function(e) {
+        
+            e.preventDefault(); 
+            const path = 'http://localhost:3000/';
+            // const path = 'http://murayamaengenharia.com.br/';
+            // const path = 'http://murayamaengenharia.com.br/novo/';
+            const form = $(this);
+            const url  = path + 'solicitar-orcamento';
+            const btn  = $('#budget-form-btn');
+            const send = $('#budget-form-sending');
+            const msgS = $('#budget-form-msg-success');
+            const msgE = $('#budget-form-msg-error');
+
+            btn.hide('slow');
+            send.removeClass('d-none').show('slow');
+      
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: form.serialize(), 
+                success: function(data) {
+                    form.find('input[type=text], input[type=tel], textarea').val('');
+                    send.hide();
+                    msgS.removeClass('d-none').show('slow');
+                },
+                error: function(err) {
+                    form.find('input[type=text], input[type=tel], textarea').val('');
+                    send.hide();
+                    msgE.removeClass('d-none').show('slow');
+                }
+            });
+        });
     
         var SPMaskBehavior = function (val) {
             return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';

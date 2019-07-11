@@ -13,7 +13,7 @@
                     'Solicite um orçamento',
                     'javascript:;',
                     array(
-                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block',
+                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block text-uppercase',
                         'escape' => false,
                         'id' => 'carousel-budget'
                     )
@@ -32,7 +32,7 @@
                         'action' => 'about'
                     ),
                     array(
-                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block',
+                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block text-uppercase',
                         'escape' => false
                     )
                 ); ?>
@@ -50,7 +50,7 @@
                         'action' => 'index'
                     ),
                     array(
-                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block',
+                        'class' => 'btn btn-dark btn-sm mt-1 d-none d-md-inline-block text-uppercase',
                         'escape' => false
                     )
                 ); ?>

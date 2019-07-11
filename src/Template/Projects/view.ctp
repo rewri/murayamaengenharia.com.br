@@ -1,8 +1,3 @@
-<?php
-echo $this->Html->css('home', array('block' => 'cssTop'));
-echo $this->element('Default/topbar');
-echo $this->element('Default/fixed-navbar');
-?>
 <div id="carouselHeader" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item carousel-item-small active carousel-item-04" style="background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/projects/<?php echo $project['image']; ?>'); background-position: bottom center">
@@ -22,7 +17,7 @@ echo $this->element('Default/fixed-navbar');
         </div>
     </div>
     <div class="row mt-5 mb-5">
-        <div class="col-md-4 col-xs-12">
+        <div class="col-md-4 col-xs-12 mb-4">
             <a class="" href="http://murayamaengenharia.com.br/novo/img/projects/<?php echo $project['image']; ?>" data-lightbox="<?php echo $project['title']; ?>" data-title="<?php echo $project['title']; ?>">
                 <img class="" src="http://murayamaengenharia.com.br/novo/img/projects/<?php echo $project['image']; ?>" width="100%" alt="" style="border-radius: 15px">
             </a>
@@ -39,5 +34,3 @@ echo $this->element('Default/fixed-navbar');
 <?php echo $this->element('Default/numbers'); ?>
 <?php echo $this->element('Home/testimonials'); ?>
 <?php echo $this->element('Home/budget'); ?>
-<?php echo $this->element('Default/footer'); ?>
-<div id="whatsButton"></div>

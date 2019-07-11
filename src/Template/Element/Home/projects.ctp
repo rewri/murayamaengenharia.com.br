@@ -1,8 +1,8 @@
 <section class="container" id="projects">
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center" >
-            <h2 class="area-title pb-0">Projetos</h2>
-            <p class="p-0 m-0">Cada obra uma excelência, uma dedicação, uma paixão.</p>
+            <h2 class="area-title pb-0">Construções</h2>
+            <p class="area-subtitle">Cada projeto uma excelência, uma dedicação, uma paixão</p>
         </div>
     </div>
     <div class="row">

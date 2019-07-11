@@ -19,7 +19,7 @@
         <div class="col-md-4 col-xs-12">
             <div class="services-card">
                 <div class="services-icon">
-                    <span class="icon-wrench"></span>
+                    <span class="icon-chemistry"></span>
                 </div>
                 <div class="services-title">
                     <h2>Industriais</h2>

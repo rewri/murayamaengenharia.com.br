@@ -62,11 +62,11 @@
 
 /* Quem Somos */
 #who {
-    padding: 80px 0 30px 0;
+    padding-top: 80px;
     color: #181818;
 }
-#who p {
-    font-size: 1.1rem;
+#who p, #who ul li {
+    font-size: 1.2rem;
     font-weight: 300;
 }
 #who p strong {
@@ -102,6 +102,10 @@
     border-radius: 10px;
     font-weight: 600;
     text-transform: uppercase;
+}
+#who ul {
+    list-style: none;
+    padding: 0;
 }
 
 /* Serviços */
@@ -148,12 +152,12 @@
 
 /* Tipos de projetos */
 #project_types #project_types_top {
-    margin-top: 90px;
+    margin-top: 120px;
 }
 #project_types #project_types_bottom {
     margin-bottom: 90px;
 }
-#project_types_top .project_types_image, #project_types_bottom .project_types_image {
+.project_types_image {
     width: 100%;
     position: relative;
     display: flex;
@@ -162,14 +166,14 @@
     overflow: hidden;
 }
 
-#project_types_top .project_types_image img, #project_types_bottom .project_types_image img {
+.project_types_image img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100px;
-    height: 330px;
+    height: 380px;
 }
 #project_types .project_types_text {
-    padding-top: 15px;
+    padding-top: 25px;
     background-color: #f2f2f2;
 }
 #project_types .project_types_text h2 {
@@ -183,9 +187,6 @@
 #project_types .project_types_text p {
     color: #1d3045;
     font-weight: 400;
-}
-#project_types #project_types_bottom .project_types_text {
-    padding-top: 25px;
 }
 
 /* Orçamento */
@@ -233,6 +234,7 @@
 /* Depoimentos */
 #testimonials {
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 #testimonials .card {
     border: 1px solid #d6d6d6;
@@ -260,6 +262,7 @@
     background-color: #3C5985;
 }
 #video .video-text {
+    font-size: 1.1em;
     padding-top: 45px;
     padding-right: 55px;
 }
@@ -267,17 +270,21 @@
     border: 1px solid #fff;
     color: #fff;
 }
+#video #embed-video {
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
 
 /* Equipe */
 #contributors {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 #contributors .area-title {
     padding-top: 90px;
 }
 #contributors #contributors-carousel {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #contributors #contributors-carousel .carousel-item-contributor {
     height: 450px;
@@ -322,6 +329,16 @@
         width: 100%;
     }
 
+    #who .who-image-div {
+        padding-top: 20px;
+    }
+    #who .who-image-div img {
+        width: 100%;
+    }
+    #who .who-image-back {
+        display: none;
+    }
+
     #services {
         margin-top: 30px;
         margin-bottom: 40px
@@ -332,6 +349,9 @@
         min-height: 80px;
     }
 
+    #project_types {
+        padding-top: 40px;
+    }
     #project_types #project_types_top {
         margin-top: 10px;
     }
@@ -339,7 +359,7 @@
         margin-bottom: 20px;
     }
 
-    #project_types_top .project_types_image, #project_types_bottom .project_types_image {
+    .project_types_image {
         display: none;
     }
 
