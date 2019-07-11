@@ -59,15 +59,15 @@
                 ); ?>
             </li>
             <li class="nav-item">
-                <?php $servicesLink = $isMobile ? array('controller' => 'Pages', 'action' => 'services') : 'javascript:;'; ?>
-                <?php $servicesID = $isMobile ? null : 'navbar-services'; ?>
                 <?php echo $this->Html->link(
                     'Serviços',
-                    $servicesLink,
+                    array(
+                        'controller' => 'Pages',
+                        'action' => 'services'
+                    ),
                     array(
                         'class' => 'nav-link',
                         'escape' => false,
-                        'id' => $servicesID
                     )
                 ); ?>
             </li>

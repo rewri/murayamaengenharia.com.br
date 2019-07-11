@@ -103,3 +103,4 @@
 
     </div>
 </section>
+<?php echo $this->element('Home/budget'); ?>

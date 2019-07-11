@@ -11,7 +11,7 @@
 <section class="container" style="margin-top: 70px">
     <div class="row text-left">
         <div class="col-md-12 col-xs-12 text-center">
-            <h2 class="area-title pb-0">Nossa equipe</h2>
+            <h2 class="area-title pb-0">Equipe</h2>
             <p class="area-subtitle">Construir idéias e edificar sonhos.</p>
         </div>
     </div>
@@ -20,7 +20,7 @@
             <div class="col-md-3 col-xs-12" style="margin-bottom: 50px">
                 <div class="card p-3 text-center" style="height: 430px !important;">
                     <div class="card-body p-0 m-0">
-                        <div style="background: url('../../img/contributors/<?php echo $row['image']; ?>'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 300px"></div>
+                        <div style="background: url('http://murayamaengenharia.com.br/novo/webroot/img/contributors/<?php echo $row['image']; ?>'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 300px"></div>
                         <p class="m-0 p-0 pt-2 text-uppercase contributor-name"><?php echo $row['name']; ?></p>
                         <p class="m-0 p-0 contributor-role"><?php echo $row['role']; ?></p>
                     </div>
