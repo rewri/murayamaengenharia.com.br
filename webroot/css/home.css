@@ -1,9 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-
-body {
-    background-color: #fff;
-}
 
 .carousel-item {
     height: 520px;
@@ -16,13 +11,20 @@ body {
 }
 
 .carousel-item-01 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/A.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_A.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_A.jpg');*/
 }
 .carousel-item-02 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/B.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_B.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_B.jpg');*/
 }
 .carousel-item-03 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('../../img/home/C.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_C.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_C.jpg');*/
+}
+.carousel-item-04 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/novo/img/home/otimized/_D.jpg');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.20)), url('http://murayamaengenharia.com.br/img/home/otimized/_C.jpg');*/
 }
 
 #carouselHeader h1, #carouselHeader h2 {
@@ -58,11 +60,252 @@ body {
     background-color: rgba(0, 0, 0, 0.84);
 }
 
+/* Quem Somos */
+#who {
+    padding-top: 80px;
+    color: #181818;
+}
+#who p, #who ul li {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+#who p strong {
+    color: #3A5682;
+    font-weight: 600;
+}
+#who img {
+    width: 403px;
+    height: 269px;
+    padding: 1px;
+    border: 1px solid #949494;
+    background-color: #fff;
+    margin-top: 5px;
+}
+#who .who-image-div {
+    padding-top: 20px;
+}
+#who .who-image-back {
+    height: 270px;
+    width: 395px;
+    border: 1px solid #b9b9b9;
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: -99;
+}
+#who .btn-more {
+    background-color: transparent !important;
+    color: #3A5682;
+    padding: 10px 20px;
+    border: 1px solid #3A5682;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#who ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Serviços */
+#services {
+    margin-top: 60px;
+    margin-bottom: 40px
+}
+#services .services-card {
+    min-height: 265px;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 50px 0 20px 0;
+    position: relative;
+    -webkit-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+    -moz-box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+    box-shadow: 11px 11px 18px -17px rgba(0,0,0,0.43);
+}
+#services .services-icon {
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    color: #3A5784;
+    background-color: #fff;
+    padding: 0 40px;
+    display: inline;
+}
+#services .services-title h2 {
+    margin: 35px 0 20px 0;
+    font-size: 1em;
+    font-weight: 800;
+    color: #3A5784;
+    text-transform: uppercase;
+    text-align: center;
+}
+#services .services-content p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Tipos de projetos */
+#project_types #project_types_top {
+    margin-top: 120px;
+}
+#project_types #project_types_bottom {
+    margin-bottom: 90px;
+}
+.project_types_image {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project_types_image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100px;
+    height: 380px;
+}
+#project_types .project_types_text {
+    padding-top: 25px;
+    background-color: #f2f2f2;
+}
+#project_types .project_types_text h2 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+#project_types .project_types_text h2 span {
+    font-size: 20px;
+    color: rgba(34, 53, 78, 0.5);
+}
+#project_types .project_types_text p {
+    color: #1d3045;
+    font-weight: 400;
+}
+
+/* Orçamento */
+#budget {
+    background-color: #f3f3f3;
+    margin-top: 60px;
+}
+#budget .budget-text {
+    font-size: 1.1em;
+    padding-bottom: 50px;
+    color: #494c50;
+}
+#budget .budget-text ul {
+    list-style: none;
+}
+#budget .area-title {
+    padding-top: 60px;
+}
+#budget #budget-form-div {
+    padding-left: 45px !important;
+}
+#budget #budget-form button {
+    background-color: #3c5985;
+    border: 1px solid #636363;
+}
+#budget #budget-form .form-control {
+    border: 0;
+    border-bottom: 1px solid #3c5985;
+    background-color: #fbfbfb;
+}
+#budget #budget-form .form-control::placeholder {
+    color: #929292;
+    font-size: .9em;
+}
+#budget .budget-social-icon {
+    font-size: 3em;
+    color: #3c5985;
+}
+#budget .budget-social-text, #budget .budget-social-text a {
+    font-size: .9em;
+    text-decoration: none;
+    color: #494c50;
+}
+
+/* Depoimentos */
+#testimonials {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+#testimonials .card {
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    border-radius: 15px;
+}
+#testimonials .card .card-text {
+    font-size: 1em;
+    color: #5a5e63;
+    min-height: 100px;
+}
+#testimonials .card .card-text .quote {
+    font-size: .8em;
+    color: #b0b0b0;
+}
+#testimonials .card .name {
+    font-weight: 600;
+    color: #5a5e63;
+    text-transform: uppercase;
+}
+
+/* Vídeo */
+#video {
+    margin-top: 80px;
+    background-color: #3C5985;
+}
+#video .video-text {
+    font-size: 1.1em;
+    padding-top: 45px;
+    padding-right: 55px;
+}
+#video button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+#video #embed-video {
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+/* Equipe */
+#contributors {
+    margin-bottom: 100px;
+}
+#contributors .area-title {
+    padding-top: 90px;
+}
+#contributors #contributors-carousel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contributors #contributors-carousel .carousel-item-contributor {
+    height: 450px;
+    background-color: #fff;
+}
+#contributors #contributors-carousel .card  {
+    border-radius: 15px;
+}
+#contributors #contributors-carousel .card .card-body {
+    min-height: 380px;
+}
+#contributors .contributor-name {
+    font-weight: 600;
+    min-height: 50px;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
     .carousel-item {
-        height: 350px;
+        height: 230px;
         padding-bottom: 3vh;
         background-position: bottom center;
     }
@@ -76,6 +319,91 @@ body {
         font-size: 1rem;
         line-height: 1.2;
         font-weight: 300;
+    }
+
+    #who {
+        padding-top: 30px;
+    }
+
+    #who .btn-more {
+        width: 100%;
+    }
+
+    #who .who-image-div {
+        padding-top: 20px;
+    }
+    #who .who-image-div img {
+        width: 100%;
+    }
+    #who .who-image-back {
+        display: none;
+    }
+
+    #services {
+        margin-top: 30px;
+        margin-bottom: 40px
+    }
+
+    #services .services-card {
+        margin: 30px 0 40px 0;
+        min-height: 80px;
+    }
+
+    #project_types {
+        padding-top: 40px;
+    }
+    #project_types #project_types_top {
+        margin-top: 10px;
+    }
+    #project_types #project_types_bottom {
+        margin-bottom: 20px;
+    }
+
+    .project_types_image {
+        display: none;
+    }
+
+    #project_types .project_types_text {
+        text-align: left !important;
+        margin-bottom: 30px;
+    }
+
+    #budget ul {
+        padding-left: 0;
+    }
+
+    #budget #budget-form-div {
+        padding-top: 35px;
+        padding-left: 15px !important;
+    }
+
+    #budget .budget-icon {
+        margin-top: 30px;
+    }
+    #budget .budget-icon span {
+        font-size: 5em !important;
+    }
+    #budget .budget-social-text, #budget .budget-social-text a {
+        font-size: 1em;
+    }
+
+    #testimonials {
+        margin-top: 30px;
+    }
+    #testimonials .card {
+        margin-bottom: 20px;
+    }
+
+    #video {
+        margin-top: 20px;
+    }
+    #video .video-text {
+        padding-top: 35px;
+        padding-right: 0;
+    }
+    #video button {
+        border: 1px solid #fff;
+        color: #fff;
     }
 
 }

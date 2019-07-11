@@ -13,7 +13,7 @@
     <meta property="og:url"                content="http://murayamaengenharia.com.br/" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Murayama Engenharia" />
-    <meta property="og:description"        content="" />
+    <meta property="og:description"        content="Profissionalismo e experiência, essa é a MURAYAMA. Empresa jovem e moderna se preocupa em antecipar tendências e construir unidades imobiliárias com qualidade e preços competitivos, sempre mantendo uma equipe de profissionais direcionada para o melhor resultado." />
     <meta property="og:image"              content="" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

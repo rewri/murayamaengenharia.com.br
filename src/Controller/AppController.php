@@ -51,5 +51,8 @@ class AppController extends Controller
             'defaultPageDescription' => 'Murayama Engenharia',
         ];
         $this->set($data);
+
+        $isMobile = $this->request->is('mobile');
+        $this->set(compact('isMobile'));
     }
 }

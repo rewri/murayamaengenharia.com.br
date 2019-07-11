@@ -1,6 +1,38 @@
+.topbar {
+    background-color: #000;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 40px;
+    z-index: 99999;
+}
+.topbar ul {
+    list-style: none;
+}
+.topbar ul li {
+    color: #ababab;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    padding-right: 10px;
+}
+.topbar ul li .whatsapp-icon {
+    color: #128C7E;
+}
+.topbar ul li.whatsapp a {
+    color: #ababab;
+}
+.topbar ul li.facebook a {
+    color: #3C5A99;
+}
+.topbar ul li.instagram a {
+    color: #9b6954;
+}
+
 nav.navbar {
     background-color: transparent;
     transition: background-color 1s ease 0s;
+    margin-top: 20px;
 }
 
 nav.navbar.solid {
@@ -8,6 +40,7 @@ nav.navbar.solid {
     opacity: .99;
     transition: background-color 1.2s ease 0s;
     box-shadow: 0 0 2px #22304a;
+    margin-top: 0 !important;
 }
 
 nav .navbar-nav {
@@ -15,7 +48,7 @@ nav .navbar-nav {
 }
 
 nav .main-logo {
-    height: 80px;
+    height: 90px;
     transition: height 1.3s;
 }
 
@@ -48,12 +81,233 @@ nav .nav-link:hover:after {
     width: 100%;
 }
 
+.star {
+    color: rgba(230, 167, 27, 0.62);
+    font-size: 1.3em;
+}
+
+.area-title {
+    color: #181818;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 40px;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+.area-title:after, .area-title:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.area-subtitle {
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-weight: 300 !important;
+    font-size: 1.1em !important;
+}
+
+#numbers {
+    font-family: 'Lato', sans-serif;
+    min-height: 280px;
+    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
+    url('http://murayamaengenharia.com.br/novo/webroot/img/home/bg-numbers.jpg');
+    /*url('http://murayamaengenharia.com.br/img/home/bg-numbers.jpg');*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+#numbers .row {
+    padding: 50px 0 10px 0;
+}
+
+#numbers .box {
+    height: 180px;
+    font-size: 24px;
+    color: #eeeeee;
+}
+
+#numbers .box p.icon {
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    opacity: .5;
+}
+
+#numbers p.count-number {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0;
+    padding: 0;
+}
+
+#numbers p.label {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #afafaf;
+    text-shadow: 1px 1px 1px #000;
+
+}
+
+/* Projetos */
+#projects {
+    margin-top: 90px;
+}
+#projects .project-card {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#projects .project-card .project-image {
+    background-color: #1d2124;
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+    transition: opacity .3s ease-in-out;
+}
+#projects .project-card .project-image:hover{
+    opacity: 0.8;
+    transition: opacity .3s ease-in-out;
+}
+#projects .project-card .project-title {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #3A5784;
+}
+#projects .project-card .project-button {
+    color: #717171;
+    border: 1px solid #b9b9b9;
+}
+
+/* Contato */
+#contact {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}
+#contact .card {
+    border-radius: 15px;
+    background-color: #fff;
+    color: #5a5e63;
+    margin-bottom: 60px;
+}
+#contact .card .card-body h3 {
+    font-size: 1.4em;
+}
+#contact .card .card-body h3 span {
+    color: #3c5985;
+}
+#contact .card .card-body {
+    font-size: 1.1em;
+    min-height: 190px;
+}
+#contact .card .card-body a {
+    font-size: 1.1em;
+    color: #3c5985;
+    text-decoration: none;
+}
+#contact .card .card-body .phone-text-icon {
+    font-size: .9em;
+    padding-right: 5px;
+}
+.carousel-item-small {
+    height: 350px !important;
+}
+
+/* Quem somos detalhes */
+#who-detail {
+    padding-top: 60px;
+    margin-bottom: -60px;
+    font-size: 1.2em;
+}
+#who-detail h3 {
+    color: #1d3045;
+    font-weight: 300;
+}
+.spacer {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+/* Rodapé */
+#footer {
+    min-height: 530px;
+    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
+    url('http://murayamaengenharia.com.br/novo/webroot/img/home/otimized/otmz-footer-bg-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 1.3em;
+    border-bottom: 6px solid #000;
+}
+#footer .footer-logo {
+    margin-top: 30px;
+    height: 180px;
+}
+#footer ul {
+    list-style: none;
+}
+#footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#footer .footer-social-icon {
+    color: #fff;
+    font-size: 3em;
+    margin-top: 45px;
+}
+
+/* Social Icons */
+#social-side-links {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+}
+
+#social-side-links li a {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
+    margin-bottom: 20px;
+}
+
+#social-side-links li a img {
+    display: block;
+    max-width: 50px;
+    padding: 10px;
+}
+#social-side-links .social-side-facebook a {
+    background-color: #3c5a96;
+}
+#social-side-links .social-side-instagram a {
+    background-color: #C13584;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
 
     nav.navbar {
         height: 70px;
         display: flex;
+        margin-top: 0;
     }
 
     .navbar-collapse {
@@ -75,5 +329,98 @@ nav .nav-link:hover:after {
     nav .nav-link {
         font-size: 15px !important;
     }
+
+    .area-title {
+        color: #181818;
+        display: inline-block;
+    }
+    .area-title:after, .area-title:before {
+        display: inline-block;
+        border: 0;
+    }
+    .area-subtitle {
+        margin: 0 0 20px 0;
+    }
+
+    #projects {
+        margin: 30px 0 60px 0;
+    }
+
+    #projects .project-card {
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    #projects .project-card .project-image {
+        height: 120px;
+    }
+    #projects .project-card .project-button {
+        width: 100%;
+    }
+    #projects .project-button-all {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .carousel-item-small {
+        height: 250px !important;
+    }
+    #contact .card .card-body {
+        min-height: 100%;
+    }
+    #contact .card .card-body a.mobile-contact-btn {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #3c5985;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #contact .card .card-body p.phone-call {
+        padding-top: 8px;
+        padding-bottom: 25px;
+    }
+
+    #contact .contact-social p {
+        font-size: .8em;
+        display: inline-block;
+        padding-bottom: 45px;
+    }
+    #contact .contact-social p span {
+        font-size: 2em;
+    }
+
+    #social-side-links {
+        bottom: -10px;
+        left: 10px;
+    }
+    #social-side-links li a {
+        margin-bottom: 8px;
+    }
+
+    #social-side-links li a img {
+        max-width: 45px;
+    }
+
+    #footer {
+        font-size: 1.3em;
+        padding-bottom: 80px;
+    }
+    #footer .footer-logo {
+        margin-top: 30px;
+        height: 100px;
+    }
+    #footer ul {
+        text-align: center;
+    }
+    #footer ul li {
+        padding-bottom: 10px;
+    }
+    #footer .footer-social-icon {
+        font-size: 4em;
+    }
+
 
 }

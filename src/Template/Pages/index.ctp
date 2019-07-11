@@ -1,51 +1,19 @@
-<?php echo $this->Html->css('home', array('block' => 'cssTop')); ?>
-<?php echo $this->element('Default/navbar'); ?>
-<?php echo $this->element('Home/carousel'); ?>
-
-<section class="py-5">
-    <div class="container">
-        <h1 class="display-4">Full Page Image Slider</h1>
-        <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
-    </div>
-</section>
-
-<div class="container">
-    <?php echo $this->element('Home/services'); ?>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<?php
+echo $this->element('Home/carousel');
+echo $this->element('Home/about');
+echo $this->element('Home/services');
+if (!empty($projects)) {
+    echo $this->element('Home/projects');
+}
+echo $this->element('Home/project_types');
+echo $this->element('Default/numbers');
+echo $this->element('Home/budget');
+if (!empty($testimonials)) {
+    echo $this->element('Home/testimonials');
+}
+echo $this->element('Home/video');
+if (!empty($contributors) && !$this->request->is('mobile')) {
+    echo $this->element('Home/contributors');
+}
+echo $this->element('Default/contact');
+?>

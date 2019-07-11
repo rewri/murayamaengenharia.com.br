@@ -19,70 +19,70 @@
             <li class="nav-item active">
                 <?php echo $this->Html->link(
                     '<i class="fas fa-home"></i> <span class="d-sm-none pl-1"> Home</span> <span class="sr-only">(current)</span>',
-                    array(
-                        'plugin' => null,
-                        'controller' => 'pages',
-                        'action' => 'index'
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-home'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
+                <?php $whoLink = $isMobile ? array('controller' => 'Pages', 'action' => 'about') : 'javascript:;'; ?>
+                <?php $whoID = $isMobile ? null : 'navbar-who'; ?>
                 <?php echo $this->Html->link(
                     'Quem somos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    $whoLink,
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => $whoID
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
-                    'Projetos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'Construções',
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-projects'
+                    )
+                ); ?>
+            </li>
+            <li class="nav-item">
+                <?php echo $this->Html->link(
+                    'Serviços',
+                    'javascript:;',
+                    array(
+                        'class' => 'nav-link',
+                        'escape' => false,
+                        'id' => 'navbar-services'
                     )
                 ); ?>
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Orçamentos',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    'javascript:;',
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => 'navbar-budget'
                     )
                 ); ?>
             </li>
+            <?php $contributorsLink = $isMobile ? array('controller' => 'Pages', 'action' => 'contributors') : 'javascript:;'; ?>
+            <?php $contributorsID = $isMobile ? null : 'navbar-contributors'; ?>
             <li class="nav-item">
                 <?php echo $this->Html->link(
                     'Equipe',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
+                    $contributorsLink,
                     array(
                         'class' => 'nav-link',
-                        'escape' => false
+                        'escape' => false,
+                        'id' => $contributorsID
                     )
                 ); ?>
             </li>
@@ -91,22 +91,8 @@
                     'Contato',
                     array(
                         'plugin' => null,
-                        'controller' => null,
-                        'action' => null
-                    ),
-                    array(
-                        'class' => 'nav-link',
-                        'escape' => false
-                    )
-                ); ?>
-            </li>
-            <li class="nav-item">
-                <?php echo $this->Html->link(
-                    'Trabalhe conosco',
-                    array(
-                        'plugin' => null,
-                        'controller' => null,
-                        'action' => null
+                        'controller' => 'pages',
+                        'action' => 'contact'
                     ),
                     array(
                         'class' => 'nav-link',
@@ -117,18 +103,3 @@
         </ul>
     </div>
 </nav>
-<?php $this->Html->scriptStart(['block' => 'scriptBottom']); ?>
-    $(document).ready(function() {
-        $(document).on('scroll', function() {
-            if ($(this).scrollTop() >= $('#after-carousel').position().top + 80) {
-                $('.navbar').addClass('solid');
-                $('.main-logo').addClass('solid-logo');
-            } else {
-                $('.navbar').removeClass('solid');
-                $('.main-logo').removeClass('solid-logo');
-            }
-        });
-    });
-<?php echo $this->Html->scriptEnd(); ?>
-
-
