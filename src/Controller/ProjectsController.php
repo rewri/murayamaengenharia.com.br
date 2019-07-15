@@ -29,7 +29,8 @@ class ProjectsController extends AppController
             'contain' => ['ProjectCategories', 'ProjectImages']
         ]);
         $this->set('title', $project['title']);
-        $this->set(compact('project', 'testimonials'));
+        $otherProjects = $this->Projects->getAll(4)->toArray();
+        $this->set(compact('project', 'testimonials', 'otherProjects'));
     }
 
 }
