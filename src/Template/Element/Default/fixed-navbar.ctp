@@ -60,7 +60,7 @@
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
-                    'Serviços',
+                    'Projetos',
                     array(
                         'controller' => 'Pages',
                         'action' => 'services'

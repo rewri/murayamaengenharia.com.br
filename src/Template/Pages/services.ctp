@@ -12,8 +12,8 @@
     <div class="container" id="project_types">
         <div class="row" id="project_types_top">
             <div class="col-md-12 col-xs-12 text-center">
-                <h2 class="area-title pb-0">Serviços</h2>
-                <p class="area-subtitle">Responsabilidade e qualidade, do básico ao acabamento</p>
+                <h2 class="area-title pb-0">Projetos</h2>
+                <p class="area-subtitle">Responsabilidade e qualidade</p>
             </div>
         </div>
         <div class="row">

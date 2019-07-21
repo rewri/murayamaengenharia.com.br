@@ -35,14 +35,14 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'index']);
 
     /* Projetos */
-    $routes->connect('/projetos', ['controller' => 'Projects', 'action' => 'index']);
-    $routes->connect('/projetos/:slug/:id', ['controller' => 'Projects', 'action' => 'view'], ['pass' => ['slug', 'id']]);
+    $routes->connect('/construcoes', ['controller' => 'Projects', 'action' => 'index']);
+    $routes->connect('/construcoes/:slug/:id', ['controller' => 'Projects', 'action' => 'view'], ['pass' => ['slug', 'id']]);
 
     /* Sobre e contato */
     $routes->connect('/sobre', ['controller' => 'Pages', 'action' => 'about']);
     $routes->connect('/contato', ['controller' => 'Pages', 'action' => 'contact']);
     $routes->connect('/equipe', ['controller' => 'Pages', 'action' => 'contributors']);
-    $routes->connect('/sevicos', ['controller' => 'Pages', 'action' => 'services']);
+    $routes->connect('/projetos', ['controller' => 'Pages', 'action' => 'services']);
     $routes->connect('/solicitar-orcamento', ['controller' => 'Pages', 'action' => 'budget']);
 
     $routes->fallbacks(DashedRoute::class);

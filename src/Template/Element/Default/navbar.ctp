@@ -53,7 +53,7 @@
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
-                    'Serviços',
+                    'Projetos',
                     'javascript:;',
                     array(
                         'class' => 'nav-link',

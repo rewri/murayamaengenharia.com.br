@@ -3,8 +3,8 @@ $(document).ready(function() {
     // CAROUSEL
     function initCarousel() {
         $('.carousel').carousel({
-            interval: 11000,
-            pause: false
+            interval: 6000,
+            pause: true
         });
     }
 

@@ -9,7 +9,7 @@ $link = array(
 <div class="row project-card">
     <div class="col-md-12">
         <?php
-        echo $this->Html->link('<div class="project-image" style="background: url(http://murayamaengenharia.com.br/novo/webroot/img/projects/' . $data['id']  . '/' . $data['image'] . '); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>',
+        echo $this->Html->link('<div class="project-image" style="background: url(http://murayamaengenharia.com.br/webroot/img/projects/' . $data['id']  . '/' . $data['image'] . '); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>',
             $link,
             array(
                 'escape' => false,
