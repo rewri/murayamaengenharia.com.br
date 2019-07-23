@@ -5,8 +5,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="mask-icon" href="" color="">
 
-    <meta name="description" content="Murayama Engenharia" />
-    <meta name="keywords"    content="Murayama Engenharia" />
+    <meta name="description" content="Empresa jovem e moderna, se preocupa em antecipar tendências e construir unidades imobiliárias com qualidade e preços competitivos." />
+    <meta name="keywords"    content="Murayama Engenharia, engenharia, construção, construção botucatu, construtora, construtora botucatu, engenharia botucatu, obras, murayama, muraiama, projetos" />
     <meta name="robots"      content="index, follow" />
     <meta name="theme-color" content="#32406D">
 

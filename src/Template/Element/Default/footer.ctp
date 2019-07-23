@@ -23,7 +23,7 @@
                         </li>
                         <li><i class="fas fa-phone"></i> (14) 3813.6812</li>
                         <li><i class="fab fa-whatsapp"></i> (14) 99663.5051</li>
-                        <li class="d-none d-md-block"><a href="mailto:contato@murayamaengenharia.com.br">contato@murayamaengenharia.com.br</a></li>
+                        <li class="d-none d-md-block"><a href="mailto:contato@murayamaengenharia.com.br">contato&commat;murayamaengenharia.com.br</a></li>
                     </ul>
                 </address>
             </div>
