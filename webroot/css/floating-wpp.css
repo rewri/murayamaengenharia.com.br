@@ -9,6 +9,8 @@
 .floating-wpp .floating-wpp-button {
     position: relative;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
     transition: box-shadow 0.2s;
     cursor: pointer;
@@ -37,6 +39,8 @@
 .floating-wpp .floating-wpp-popup {
     /*border: 2px solid white;*/
     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     background-color: #E5DDD5;
     position: absolute;
     overflow: hidden;
@@ -62,6 +66,8 @@
     background-color: white;
     padding: 8px;
     border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    -moz-border-radius: 0px 5px 5px 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
     opacity: 0;
     transition: opacity 0.2s;
@@ -93,6 +99,8 @@
 .floating-wpp .floating-wpp-input-message textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     box-shadow: none;
     padding: 8px;
     margin: 10px 0;
