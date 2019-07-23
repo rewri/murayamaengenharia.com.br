@@ -43,7 +43,7 @@
                 <h2 class="display-4">CONHEÇA NOSSAS OBRAS</h2>
                 <p class="lead d-none d-md-block">Nossos clientes recebem atenção diferenciada, uma parceria de respeito e objetivos mútuos. Esse é nosso papel como construtores: construir idéias e edificar sonhos.</p>
                 <?php echo $this->Html->link(
-                    'Veja nossos projetos',
+                    'Veja nossas construções',
                     array(
                         'plugin' => null,
                         'controller' => 'projects',

@@ -1,4 +1,4 @@
-<section class="container-fluid" id="video">
+<section class="container-fluid" id="video" style="display: none">
     <div class="container text-white">
         <div class="row">
             <div class="col-md-5 col-xs-12 video-text">

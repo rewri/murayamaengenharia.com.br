@@ -89,9 +89,7 @@
         $('#budget-form').submit(function(e) {
         
             e.preventDefault(); 
-            const path = 'http://localhost:3000/';
-            // const path = 'http://murayamaengenharia.com.br/';
-            // const path = 'http://murayamaengenharia.com.br/novo/';
+            const path = 'http://murayamaengenharia.com.br/';
             const form = $(this);
             const url  = path + 'solicitar-orcamento';
             const btn  = $('#budget-form-btn');

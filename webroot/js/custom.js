@@ -72,8 +72,7 @@ $(document).ready(function() {
             headerTitle: 'Murayama Engenharia',
             headerColor: '#128C7E',
             backgroundColor: '#128C7E',
-            buttonImage: '<img src="http://murayamaengenharia.com.br/novo/img/whatsapp.svg" alt="WhatsApp" />'
-            // buttonImage: '<img src="http://murayamaengenharia.com.br/img/whatsapp.svg" alt="WhatsApp" />'
+            buttonImage: '<img src="http://murayamaengenharia.com.br/webroot/img/whatsapp.svg" alt="WhatsApp" />'
         });
 
         $(document).scroll(function() {

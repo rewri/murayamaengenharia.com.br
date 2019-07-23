@@ -116,8 +116,7 @@ nav .nav-link:hover:after {
     font-family: 'Lato', sans-serif;
     min-height: 280px;
     background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
-    url('http://murayamaengenharia.com.br/novo/webroot/img/home/bg-numbers.jpg');
-    /*url('http://murayamaengenharia.com.br/img/home/bg-numbers.jpg');*/
+    url('http://murayamaengenharia.com.br/webroot/img/home/bg-numbers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -247,7 +246,7 @@ nav .nav-link:hover:after {
 #footer {
     min-height: 530px;
     background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
-    url('http://murayamaengenharia.com.br/novo/webroot/img/home/otimized/otmz-footer-bg-1.jpg');
+    url('http://murayamaengenharia.com.br/webroot/img/home/otimized/otmz-footer-bg-1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;

@@ -56,7 +56,7 @@
                         <h3 class="pb-3"><span class="fa fa-globe"></span> Redes Sociais</h3>
                         <p class="m-0"><a href="https://www.instagram.com/murayamaengenharia/" title="@murayamaengenharia" target="_blank"><span class="fab fa-instagram pr-2"></span> instagram.com/murayamaengenharia</a></p>
                         <p class="m-0"><a href="https://www.facebook.com/murayamaengenharia/" title="/murayamaengenharia" target="_blank"><span class="fab fa-facebook-square pr-2"></span> facebook.com/murayamaengenharia</a></p>
-                        <p class="m-0"><a href="mailto:contato@murayamaengenharia.com.br" target="_blank"><span class="fa fa-mail-bulk pr-1"></span> contato@murayamaengenharia.com.br</a></p>
+                        <p class="m-0"><a href="mailto:contato@murayamaengenharia.com.br" target="_blank"><span class="fa fa-mail-bulk pr-1"></span> contato&commat;murayamaengenharia.com.br</a></p>
                     </div>
                 </div>
             </div>

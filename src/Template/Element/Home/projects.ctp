@@ -16,7 +16,7 @@
         <div class="col-md-12 col-xs-12 text-center">
             <?php echo $this->Html->link('
             <button type="button" class="btn btn-outline-secondary text-uppercase project-button-all">
-                Conheça todos nossos projetos
+                Conheça todas nossas obras
             </button>
             ', array(
                 'controller' => 'projects',
