@@ -17,12 +17,13 @@
                         <span class="fa fa-star star"></span>
                         <span class="fa fa-star star"></span>
                     </p>
+                    <p class="pb-2 m-0 name"><?php echo $row['name']; ?></p>
                     <p class="card-text text-left">
                         <span class="fa fa-quote-left pr-1 quote"></span>
                             <?php echo $row['description']; ?>
                         <span class="fa fa-quote-right pl-1 quote"></span>
                     </p>
-                    <p class="p-0 m-0 name"><?php echo $row['name']; ?></p>
+
                 </div>
             </div>
         </div>
