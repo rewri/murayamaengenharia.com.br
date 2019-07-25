@@ -85,11 +85,11 @@
 <?php echo $this->Html->script('jquery.mask.js', array('block' => 'scriptBottom'))?>
 <?php echo $this->Html->scriptBlock("
     $(document).ready(function(){
-    
+
         $('#budget-form').submit(function(e) {
-        
-            e.preventDefault(); 
-            const path = 'http://murayamaengenharia.com.br/';
+
+            e.preventDefault();
+            const path = '//murayamaengenharia.com.br/';
             const form = $(this);
             const url  = path + 'solicitar-orcamento';
             const btn  = $('#budget-form-btn');
@@ -99,11 +99,11 @@
 
             btn.hide('slow');
             send.removeClass('d-none').show('slow');
-      
+
             $.ajax({
                 type: 'POST',
                 url: url,
-                data: form.serialize(), 
+                data: form.serialize(),
                 success: function(data) {
                     form.find('input[type=text], input[type=tel], textarea').val('');
                     send.hide();
@@ -116,7 +116,7 @@
                 }
             });
         });
-    
+
         var SPMaskBehavior = function (val) {
             return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
         },
@@ -124,8 +124,8 @@
             onKeyPress: function(val, e, field, options) {
             field.mask(SPMaskBehavior.apply({}, arguments), options);
             }
-        };    
+        };
         $('.phone').mask(SPMaskBehavior, spOptions);
-    
+
     });
 ", array('block' => 'scriptBottom')); ?>

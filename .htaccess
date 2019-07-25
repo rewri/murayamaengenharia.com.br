@@ -1,3 +1,7 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.murayamaengenharia.com.br[R,L]
+
 # Uncomment the following to prevent the httpoxy vulnerability
 # See: https://httpoxy.org/
 #<IfModule mod_headers.c>
