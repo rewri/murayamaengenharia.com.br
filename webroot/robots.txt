@@ -1,4 +1,4 @@
 User-Agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://murayamaengenharia.com.br/sitemap.xml
+Sitemap: https://murayamaengenharia.com.br/sitemap.xml

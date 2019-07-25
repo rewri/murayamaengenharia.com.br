@@ -12,18 +12,18 @@
     color: #ababab;
     font-size: 12px;
     font-weight: 600;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     display: inline;
     padding-right: 10px;
 }
 .topbar ul li .whatsapp-icon {
-    color: #128C7E;
+    color: #128c7e;
 }
 .topbar ul li.whatsapp a {
     color: #ababab;
 }
 .topbar ul li.facebook a {
-    color: #3C5A99;
+    color: #3c5a99;
 }
 .topbar ul li.instagram a {
     color: #9b6954;
@@ -36,8 +36,8 @@ nav.navbar {
 }
 
 nav.navbar.solid {
-    background-color: #3A5784;
-    opacity: .99;
+    background-color: #3a5784;
+    opacity: 0.99;
     transition: background-color 1.2s ease 0s;
     box-shadow: 0 0 2px #22304a;
     margin-top: 0 !important;
@@ -58,7 +58,7 @@ nav .main-logo.solid-logo {
 }
 
 nav .nav-item {
-    padding: .5rem .4rem !important;
+    padding: 0.5rem 0.4rem !important;
 }
 
 nav .nav-link {
@@ -69,7 +69,7 @@ nav .nav-link {
 }
 
 nav .nav-link:after {
-    content: '';
+    content: "";
     width: 0;
     height: 1px;
     display: block;
@@ -99,7 +99,8 @@ nav .nav-link:hover:after {
     padding-bottom: 30px;
 }
 
-.area-title:after, .area-title:before {
+.area-title:after,
+.area-title:before {
     content: " ";
     display: block;
     border-bottom: 1px solid #ccc;
@@ -113,10 +114,10 @@ nav .nav-link:hover:after {
 }
 
 #numbers {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     min-height: 280px;
-    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
-    url('http://murayamaengenharia.com.br/webroot/img/home/bg-numbers.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)),
+        url("//murayamaengenharia.com.br/webroot/img/home/bg-numbers.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -141,11 +142,11 @@ nav .nav-link:hover:after {
     font-size: 2rem;
     margin: 0;
     padding: 0;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 #numbers p.count-number {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-size: 4.5rem;
     color: #ffffff;
@@ -160,7 +161,6 @@ nav .nav-link:hover:after {
     font-size: 1rem;
     color: #afafaf;
     text-shadow: 1px 1px 1px #000;
-
 }
 
 /* Projetos */
@@ -176,16 +176,16 @@ nav .nav-link:hover:after {
     width: 100%;
     height: 250px;
     border-radius: 7px;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
-#projects .project-card .project-image:hover{
+#projects .project-card .project-image:hover {
     opacity: 0.8;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 #projects .project-card .project-title {
     font-size: 1.3em;
     font-weight: 500;
-    color: #3A5784;
+    color: #3a5784;
 }
 #projects .project-card .project-button {
     color: #717171;
@@ -220,7 +220,7 @@ nav .nav-link:hover:after {
     text-decoration: none;
 }
 #contact .card .card-body .phone-text-icon {
-    font-size: .9em;
+    font-size: 0.9em;
     padding-right: 5px;
 }
 .carousel-item-small {
@@ -245,8 +245,8 @@ nav .nav-link:hover:after {
 /* Rodapé */
 #footer {
     min-height: 530px;
-    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.80)),
-    url('http://murayamaengenharia.com.br/webroot/img/home/otimized/otmz-footer-bg-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)),
+        url("//murayamaengenharia.com.br/webroot/img/home/otimized/otmz-footer-bg-1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -297,11 +297,14 @@ nav .nav-link:hover:after {
     background-color: #3c5a96;
 }
 #social-side-links .social-side-instagram a {
-    background-color: #C13584;
+    background-color: #c13584;
 }
 
 /* Small devices */
 @media screen and (max-width: 700px) {
+    #numbers {
+        background-image: url("//murayamaengenharia.com.br/webroot/img/home/mobile-bg-numbers.jpg");
+    }
 
     nav.navbar {
         height: 70px;
@@ -311,7 +314,7 @@ nav .nav-link:hover:after {
 
     .navbar-collapse {
         border-radius: 2px;
-        background-color: #3A5784;
+        background-color: #3a5784;
         padding-left: 10px;
         z-index: 999;
         color: #fff;
@@ -322,7 +325,7 @@ nav .nav-link:hover:after {
     }
 
     nav .nav-item {
-        padding: .1rem 0 !important;
+        padding: 0.1rem 0 !important;
     }
 
     nav .nav-link {
@@ -333,7 +336,8 @@ nav .nav-link:hover:after {
         color: #181818;
         display: inline-block;
     }
-    .area-title:after, .area-title:before {
+    .area-title:after,
+    .area-title:before {
         display: inline-block;
         border: 0;
     }
@@ -383,7 +387,7 @@ nav .nav-link:hover:after {
     }
 
     #contact .contact-social p {
-        font-size: .8em;
+        font-size: 0.8em;
         display: inline-block;
         padding-bottom: 45px;
     }
@@ -404,6 +408,7 @@ nav .nav-link:hover:after {
     }
 
     #footer {
+        background-image: url("//murayamaengenharia.com.br/webroot/img/home/otimized/mobile-otmz-footer-bg-1.jpg");
         font-size: 1.3em;
         padding-bottom: 80px;
     }
@@ -420,6 +425,4 @@ nav .nav-link:hover:after {
     #footer .footer-social-icon {
         font-size: 4em;
     }
-
-
 }
