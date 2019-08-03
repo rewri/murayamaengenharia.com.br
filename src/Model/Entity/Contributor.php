@@ -29,6 +29,7 @@ class Contributor extends Entity
         'name' => true,
         'nickname' => true,
         'role' => true,
+        'order' => true,
         'enabled' => true,
         'created' => true,
         'modified' => true

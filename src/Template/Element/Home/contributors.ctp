@@ -1,7 +1,4 @@
-<?php
-shuffle($contributors);
-$slices = array_chunk($contributors, 4);
-?>
+<?php $slices = array_chunk($contributors, 4); ?>
 <div class="container text-center" id="contributors">
     <div class="row">
         <div class="col-md-12 col-xs-12">

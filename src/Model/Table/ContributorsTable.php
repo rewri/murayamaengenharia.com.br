@@ -83,7 +83,8 @@ class ContributorsTable extends Table
                 'enabled' => true
             ),
             'order' => array(
-                'RAND()'
+                'order' => 'asc',
+                'name' => 'asc'
             ),
             'recursive' => 0
         );
