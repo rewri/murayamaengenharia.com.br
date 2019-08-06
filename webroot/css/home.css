@@ -306,39 +306,61 @@
 
 /* Small devices */
 @media screen and (max-width: 700px) {
-    .carousel-item-01 {
-        background: url("//murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_A.jpg");
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .carousel-item-02 {
-        background: url("//murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_B.jpg");
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .carousel-item-03 {
-        background: url("//murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_C.jpg");
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .carousel-item-04 {
-        background: url("//murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_D.jpg");
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     .carousel-item {
         height: 230px;
         padding-bottom: 3vh;
-        background-position: bottom center;
+        background-position: center top;
+        background-attachment: scroll;
+        background-color: #31363b;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .carousel-item-01 {
+        background-image: "https://murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_A.jpg";
+        background: url("https://murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_A.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
+    }
+    .carousel-item-02 {
+        background: url("https://murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_B.jpg");
+        /* background-attachment: fixed; */
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
+    }
+    .carousel-item-03 {
+        background: url("https://murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_C.jpg");
+        /* background-attachment: fixed; */
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
+    }
+    .carousel-item-04 {
+        background: url("https://murayamaengenharia.com.br/webroot/img/home/otimized/mobile-_D.jpg");
+        /* background-attachment: fixed; */
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
     }
 
     #carouselHeader h1,
