@@ -1,44 +1,61 @@
 $(document).ready(function() {
-
     // CAROUSEL
     function initCarousel() {
-        $('.carousel').carousel({
+        $(".carousel").carousel({
             interval: 6000,
             pause: true
         });
+        $(".carousel").hover(
+            function() {
+                $(this).carousel("pause");
+            },
+            function() {
+                $(this).carousel("cycle");
+            }
+        );
     }
 
     // NUMBERS
     function initNumbersCount() {
         var isVisible = true;
         function startNumbersCount() {
-            $('.count-number').each(function () {
-                $(this).prop('Counter',0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
+            $(".count-number").each(function() {
+                $(this)
+                    .prop("Counter", 0)
+                    .animate(
+                        {
+                            Counter: $(this).text()
+                        },
+                        {
+                            duration: 2000,
+                            easing: "swing",
+                            step: function(now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        }
+                    );
             });
         }
-        $.fn.isOnScreen = function(){
+        $.fn.isOnScreen = function() {
             var win = $(window);
             var viewport = {
-                top : win.scrollTop(),
-                left : win.scrollLeft()
+                top: win.scrollTop(),
+                left: win.scrollLeft()
             };
             viewport.right = viewport.left + win.width();
             viewport.bottom = viewport.top + win.height() - 100;
             var bounds = this.offset();
             bounds.right = bounds.left + this.outerWidth();
             bounds.bottom = bounds.top + this.outerHeight();
-            return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+            return !(
+                viewport.right < bounds.left ||
+                viewport.left > bounds.right ||
+                viewport.bottom < bounds.top ||
+                viewport.top > bounds.bottom
+            );
         };
-        $(window).scroll(function(){
-            if ($('#numbers').isOnScreen()) {
+        $(window).scroll(function() {
+            if ($("#numbers").isOnScreen()) {
                 if (isVisible) {
                     startNumbersCount();
                     isVisible = false;
@@ -49,6 +66,4 @@ $(document).ready(function() {
 
     initCarousel();
     initNumbersCount();
-
-
 });
