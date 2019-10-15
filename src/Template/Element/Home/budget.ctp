@@ -27,6 +27,7 @@
                             <div class="form-group mb-4">
                                 <label for="phone">Seu telefone</label>
                                 <?php echo $this->Form->control('phone', array('type' => 'tel', 'class' => 'form-control phone', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx'))?>
+                                <?php echo $this->Form->control('phone_captcha', array('type' => 'tel', 'class' => 'form-control', 'required' => false, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx', 'id' => 'phone_captcha'))?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12">

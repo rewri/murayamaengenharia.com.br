@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $("#phone_captcha").hide();
+
     // NAVBAR
     $(document).on("scroll", function() {
         if ($(this).scrollTop() >= $("#after-carousel").position().top + 80) {

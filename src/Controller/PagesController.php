@@ -73,22 +73,24 @@ class PagesController extends AppController
                 $data['created'] = date('Y-m-d H:i:s');
                 $budgets = TableRegistry::getTableLocator()->get('Budgets');
                 $budget = $budgets->newEntity($data);
-                if ($budgets->save($budget)) {
-                    $created = date('d/m/y - H:i:s');
-                    $description = "
-                        <h1>Contato para solicitação de orçamento:</h1>
-                        <p><strong>Nome:</strong> {$data['name']}</p>
-                        <p><strong>Fone:</strong> {$data['phone']}</p>
-                        <p><strong>Descrição:</strong> {$data['description']}</p>
-                        <p><strong>Data:</strong> {$created}</p>
-                    ";
-                    $email = new Email('default');
-                    $email->setFrom(['contato@murayamaengenharia.com.br' => 'Contato Murayama Engenharia'])
-                        ->setTo('contato@murayamaengenharia.com.br')
-                        ->setBcc('rkfumes@gmail.com')
-                        ->setSubject('Solicitação de orçamento')
-                        ->setEmailFormat('html')
-                        ->send($description);
+                if (empty($data['phone_captcha'])) {
+                    if ($budgets->save($budget)) {
+                        $created = date('d/m/y - H:i:s');
+                        $description = "
+                            <h1>Contato para solicitação de orçamento:</h1>
+                            <p><strong>Nome:</strong> {$data['name']}</p>
+                            <p><strong>Fone:</strong> {$data['phone']}</p>
+                            <p><strong>Descrição:</strong> {$data['description']}</p>
+                            <p><strong>Data:</strong> {$created}</p>
+                        ";
+                        $email = new Email('default');
+                        $email->setFrom(['contato@murayamaengenharia.com.br' => 'Contato Murayama Engenharia'])
+                            ->setTo('contato@murayamaengenharia.com.br')
+                            ->setBcc('rkfumes@gmail.com')
+                            ->setSubject('Solicitação de orçamento')
+                            ->setEmailFormat('html')
+                            ->send($description);
+                    }
                 }
             }
         }
