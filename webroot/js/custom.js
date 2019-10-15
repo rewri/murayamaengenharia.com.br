@@ -65,6 +65,15 @@ $(document).ready(function() {
                 1200
             );
         });
+
+        $("#navbar-partners").click(function () {
+            $([document.documentElement, document.body]).animate(
+                {
+                    scrollTop: $("#partners").offset().top - 90
+                },
+                1200
+            );
+        });
     }
 
     $(function() {

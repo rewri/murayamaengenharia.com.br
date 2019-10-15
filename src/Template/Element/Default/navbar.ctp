@@ -88,6 +88,17 @@
             </li>
             <li class="nav-item">
                 <?php echo $this->Html->link(
+                    'Parceiros',
+                    'javascript:;',
+                    array(
+                        'class' => 'nav-link',
+                        'escape' => false,
+                        'id' => 'navbar-partners'
+                    )
+                ); ?>
+            </li>
+            <li class="nav-item">
+                <?php echo $this->Html->link(
                     'Contato',
                     array(
                         'plugin' => null,

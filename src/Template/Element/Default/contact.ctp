@@ -1,4 +1,26 @@
 <?php $whatsAppMessage = "Ol%C3%A1%20Murayama%20Engenharia%2C%20%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.%20Me%20retorne%20assim%20que%20poss%C3%ADvel.%20Obrigado."; ?>
+<div class="conatiner-fluid" id="partners">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 text-center">
+                <h2 class="area-title pb-0">Parceiros</h2>
+                <p class="area-subtitle">Compartilhar o ideal e ampliar resultados</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12 text-center">
+                <?php echo $this->Html->image('partners/logo_avalize_branco.jpg', array('class' => 'pt-4 logo-partners', 'alt' => 'Logo Avalize Engenharia', 'id' => 'partner01')); ?>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <?php echo $this->Html->image('partners/logo_ecosolar.jpg', array('class' => ' logo-partners', 'alt' => 'Logo Ecosolar', 'id' => 'partner02')); ?>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <?php echo $this->Html->image('partners/logo_iluminar.jpg', array('class' => 'pt-2  logo-partners', 'alt' => 'Logo Iluminar', 'id' => 'partner03')); ?>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid" id="contact">
     <div class="container">
         <div class="row pt-5">

@@ -412,6 +412,9 @@
     #project_types #project_types_bottom {
         margin-bottom: 20px;
     }
+     #project_types #project_types_bottom {
+        margin-bottom: 20px;
+    }
 
     .project_types_image {
         display: none;

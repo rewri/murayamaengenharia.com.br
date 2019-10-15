@@ -300,6 +300,37 @@ nav .nav-link:hover:after {
     background-color: #c13584;
 }
 
+#partners {
+    margin-bottom: 80px;
+}
+
+#partner01 {
+    width: 370px;
+}
+#partner02 {
+    width: 180px;
+}
+#partner03 {
+    width: 350px;
+}
+
+.card-solar {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    height: 100%;
+    background-color: #025302;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+}
+.card-solar p {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    color: #fff !important;
+}
+
 /* Small devices */
 @media screen and (max-width: 700px) {
     #numbers {
@@ -425,4 +456,35 @@ nav .nav-link:hover:after {
     #footer .footer-social-icon {
         font-size: 4em;
     }
+
+    #partners {
+        margin-bottom: 0;
+    }
+    #partner02 {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    #partner01, #partner03 {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .card-solar {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        background-color: transparent !important;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .card-solar p {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        color: #025302 !important;
+    }
+     .card-solar p:before {
+        content:"• ";
+    }
+
 }
