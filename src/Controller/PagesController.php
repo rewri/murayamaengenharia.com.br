@@ -59,6 +59,11 @@ class PagesController extends AppController
         $this->set('title', 'Serviços');
     }
 
+    public function partners()
+    {
+        $this->set('title', 'Parceiros');
+    }
+
     public function budget()
     {
         $this->autoRender = false;

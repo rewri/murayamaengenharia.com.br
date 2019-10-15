@@ -83,5 +83,37 @@
 
         </div>
 
+        <div class="row" id="project_types_bottom">
+            <div class="col-md-6 col-xs-12 p-0">
+                <div class="project_types_image">
+                    <?php echo $this->Html->image('home/solar.png', array('alt' => 'Projeto de combate a incêndio')); ?>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 project_types_text">
+                <h2><span class="icon-target"></span> Energia solar fotovoltaica</h2>
+                <p>Já pensou em usar o ar-condicionado sem peso na consciência e na conta de energia elétrica?<br>
+                    O sistema fotovoltaico transforma energia solar em elétrica, que é uma energia totalmente limpa e renovável. O sistema possibilita
+                    que a energia excedente seja devolvida a rede pública.
+                </p>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="card-solar">
+                            <p>Investimento com alto retorno</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="card-solar">
+                            <p>Valorização imediata do seu imóvel</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="card-solar">
+                            <p>Painel com vida útil de até 40 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>

@@ -43,6 +43,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/contato', ['controller' => 'Pages', 'action' => 'contact']);
     $routes->connect('/equipe', ['controller' => 'Pages', 'action' => 'contributors']);
     $routes->connect('/projetos', ['controller' => 'Pages', 'action' => 'services']);
+    $routes->connect('/parceiros', ['controller' => 'Pages', 'action' => 'partners']);
     $routes->connect('/solicitar-orcamento', ['controller' => 'Pages', 'action' => 'budget']);
 
     $routes->fallbacks(DashedRoute::class);
