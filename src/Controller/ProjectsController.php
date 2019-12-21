@@ -36,7 +36,13 @@ class ProjectsController extends AppController
     public function view($slug, $id = null)
     {
         $project = $this->Projects->get($id, [
-            'contain' => ['ProjectCategories', 'ProjectImages']
+            'contain' => [
+                'ProjectCategories',
+                'ProjectImages' => [
+                    'conditions' => ['ProjectImages.enabled' => true],
+                    'sort' => ['ProjectImages.order' => 'ASC', 'ProjectImages.id' => 'ASC']
+                ]
+            ]
         ]);
         $this->set('title', $project['title']);
         $otherProjects = $this->Projects->getAll(4)->toArray();
