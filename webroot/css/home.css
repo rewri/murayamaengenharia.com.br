@@ -259,25 +259,6 @@
     text-transform: uppercase;
 }
 
-/* Vídeo */
-#video {
-    margin-top: 80px;
-    background-color: #3c5985;
-}
-#video .video-text {
-    font-size: 1.1em;
-    padding-top: 45px;
-    padding-right: 55px;
-}
-#video button {
-    border: 1px solid #fff;
-    color: #fff;
-}
-#video #embed-video {
-    border-radius: 5px;
-    border: 1px solid #fff;
-}
-
 /* Equipe */
 #contributors {
     margin-bottom: 100px;

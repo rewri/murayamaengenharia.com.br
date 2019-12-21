@@ -17,6 +17,7 @@ class PagesController extends AppController
         parent::initialize();
         $this->loadModel('Testimonials');
         $this->loadModel('Projects');
+        $this->loadModel('ProjectCategories');
         $this->loadModel('Contributors');
         $this->loadModel('Budgets');
 
@@ -29,8 +30,9 @@ class PagesController extends AppController
         $this->viewBuilder()->setLayout('home');
         $projectsLimit = $this->request->is('mobile') ? 3 : 6;
         $projects = $this->Projects->getAll($projectsLimit)->toArray();
+        $projectCategories = $this->ProjectCategories->find('all')->order('rand()')->toArray();
         $contributors = $this->Contributors->getAll()->toArray();
-        $this->set(compact('projects', 'contributors'));
+        $this->set(compact('projects', 'projectCategories', 'contributors'));
     }
 
     public function about()

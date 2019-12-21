@@ -113,7 +113,29 @@ class ProjectsTable extends Table
     {
         $query = array(
             'conditions' => array(
-                'enabled' => true
+                'Projects.enabled' => true
+            ),
+            'contain' => array(
+                'ProjectCategories'
+            ),
+            'order' => array(
+                'RAND()'
+            ),
+            'limit' => $limit,
+            'recursive' => 0
+        );
+        return $this->find('all', $query);
+    }
+
+    public function getAllByCategory($categoryId = null, $limit = 30)
+    {
+        $query = array(
+            'conditions' => array(
+                'Projects.enabled' => true,
+                'Projects.project_category_id' => $categoryId,
+            ),
+            'contain' => array(
+                'ProjectCategories'
             ),
             'order' => array(
                 'RAND()'

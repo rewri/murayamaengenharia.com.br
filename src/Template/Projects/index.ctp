@@ -16,11 +16,16 @@
         </div>
     </div>
     <div class="row mt-5" id="projects">
-        <?php foreach ($projects as $row) : ?>
-            <div class="col-md-6 col-xs-12">
-                <?php echo $this->element('Projects/card', array('data' => $row)); ?>
-            </div>
-        <?php endforeach; ?>
+        <?php if (!empty($projectCategories)) : ?>
+            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
+        <?php endif; ?>
+        <?php if (!empty($projects)) : ?>
+            <?php foreach ($projects as $row) : ?>
+                <div class="col-md-4 col-xs-12">
+                    <?php echo $this->element('Projects/card', array('data' => $row)); ?>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </section>
 <?php echo $this->element('Default/numbers'); ?>

@@ -14,9 +14,17 @@
         <div class="col-md-12 col-xs-12 text-center">
             <h2 class="area-title pb-0"><?php echo $project['title']; ?></h2>
             <?php if (!empty($project['subtitle'])) : ?>
-                <p class="p-0 m-0" style="font-size: 1.1em"><?php echo $project['subtitle']; ?></p>
+                <p class="p-0 m-0 mb-3" style="font-size: 1.1em"><?php echo $project['subtitle']; ?></p>
             <?php endif; ?>
-            <p class="pt-2 m-0 text-uppercase" style="font-size: 1.1em"><?php echo $project['project_category']['title']; ?></p>
+            <?php echo $this->Html->link($project['project_category']['title'],
+                array(
+                    'controller' => 'Projects',
+                    'action' => 'listByCategory',
+                    'slug' => $this->Text->slug(mb_strtolower($project['project_category']['title'])),
+                    'id' => $project['project_category']['id']
+                ),
+                array('escape' => false, 'class' => 'pt-2 m-0 text-uppercase', 'style' => 'font-size: 1.1em; color: #3c5a99', 'title' => "Veja mais {$project['project_category']['title']}"));
+            ?>
             <?php if (!empty($project['date'])) : ?>
                 <p class="p-0 m-0" style="font-size: 1.1em"><?php echo $this->Time->format('d/m/Y', $project['date']); ?></p>
             <?php endif; ?>
