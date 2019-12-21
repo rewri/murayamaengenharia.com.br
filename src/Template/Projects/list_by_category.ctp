@@ -28,7 +28,6 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-
     <div class="row mb-5">
         <div class="col-md-12 col-xs-12 text-center">
             <?php echo $this->Html->link('
@@ -43,6 +42,11 @@
             )); ?>
         </div>
     </div>
+    <?php if (!empty($projectCategories)) : ?>
+        <div class="row">
+            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
+        </div>
+    <?php endif; ?>
 </section>
 <?php echo $this->element('Default/numbers'); ?>
 <?php echo $this->element('Home/testimonials'); ?>
