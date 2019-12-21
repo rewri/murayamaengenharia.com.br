@@ -37,6 +37,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     /* Projetos */
     $routes->connect('/construcoes', ['controller' => 'Projects', 'action' => 'index']);
     $routes->connect('/construcoes/:slug/:id', ['controller' => 'Projects', 'action' => 'view'], ['pass' => ['slug', 'id']]);
+    $routes->connect('/construcoes/categoria/:slug/:id', ['controller' => 'Projects', 'action' => 'listByCategory'], ['pass' => ['slug', 'id']]);
 
     /* Sobre e contato */
     $routes->connect('/sobre', ['controller' => 'Pages', 'action' => 'about']);

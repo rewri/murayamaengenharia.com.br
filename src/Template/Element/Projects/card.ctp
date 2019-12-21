@@ -8,6 +8,20 @@ $link = array(
 ?>
 <div class="row project-card">
     <div class="col-md-12">
+        <?php if (!empty($data['project_category']['title'])) : ?>
+            <p class="mb-1">
+                <?php echo $this->Html->link('<i class="fa fa-angle-double-right"></i> ' . $data['project_category']['title'],
+                    array(
+                        'controller' => 'Projects',
+                        'action' => 'listByCategory',
+                        'slug' => $this->Text->slug(mb_strtolower($data['project_category']['title'])),
+                        'id' => $data['project_category']['id']
+                    ),
+                    array('escape' => false, 'style' => 'color: #3c5a99', 'title' => "Veja mais {$data['project_category']['title']}")
+                    );
+                ?>
+            </p>
+        <?php endif; ?>
         <?php
         echo $this->Html->link('<div class="project-image" style="background: url(//murayamaengenharia.com.br/webroot/img/projects/' . $data['id']  . '/' . $data['image'] . '); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>',
             $link,
@@ -19,7 +33,7 @@ $link = array(
         ?>
     </div>
     <div class="col-md-12">
-        <p class="mb-1 mt-3">
+        <p class="mb-0 mt-3">
         <?php
         echo $this->Html->link($data['title'],
             $link,
