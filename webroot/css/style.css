@@ -163,6 +163,21 @@ nav .nav-link:hover:after {
     text-shadow: 1px 1px 1px #000;
 }
 
+/* Vídeo */
+#video {
+    margin-top: 80px;
+    background-image: url("../img/home/video_bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+}
+#video #embed-video {
+    border-radius: 5px;
+    border: 1px solid #4e5b69;
+}
+
 /* Projetos */
 #projects {
     margin-top: 90px;
@@ -394,6 +409,21 @@ nav .nav-link:hover:after {
     #projects .project-button-all {
         width: 100%;
         margin-top: 5px;
+    }
+
+    /* Vídeo */
+    #video {
+        margin-top: 0;
+        background: #000;
+        margin-bottom: 80px;
+    }
+    #video #embed-video {
+        border: 0;
+        border-radius: 0;
+    }
+
+    #video .embed-responsive {
+       position: static
     }
 
     .carousel-item-small {
