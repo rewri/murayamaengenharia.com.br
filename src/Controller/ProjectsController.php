@@ -29,7 +29,8 @@ class ProjectsController extends AppController
         $category = $this->ProjectCategories->get($id);
         $this->set('title', $category['title']);
         $projects = $this->Projects->getAllByCategory($category['id']);
-        $this->set(compact('category', 'projects'));
+        $projectCategories = $this->ProjectCategories->find('all')->order('rand()')->toArray();
+        $this->set(compact('category', 'projects', 'projectCategories'));
     }
 
     public function view($slug, $id = null)
