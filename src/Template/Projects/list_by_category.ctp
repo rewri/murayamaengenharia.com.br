@@ -1,7 +1,8 @@
 <?php echo $this->Html->css('style.css'); ?>
 <div id="carouselHeader" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item carousel-item-small active carousel-item-04">
+        <?php $numbers = array('01', '02', '03', '04'); $randKey = array_rand($numbers, 1); ?>
+        <div class="carousel-item carousel-item-small active carousel-item-<?php echo $numbers[$randKey]; ?>">
             <div class="carousel-caption text-left">
                 <h1 id="after-carousel">MURAYAMA ENGENHARIA</h1>
                 <p class="lead d-none d-md-block">A Murayama Engenharia e Construção orgulha-se do que faz e o faz com amor e dedicação.</p>
