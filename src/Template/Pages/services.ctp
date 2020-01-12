@@ -103,30 +103,30 @@
         </div>
 
         <div class="row" id="project_types_bottom">
-            <div class="col-md-6 col-xs-12 p-0">
+            <div class="col-md-8 col-xs-12 p-0">
                 <div class="project_types_image">
-                    <?php echo $this->Html->image('home/solar.png', array('alt' => 'Projeto de combate a incêndio')); ?>
+                    <?php echo $this->Html->image('home/solar2.jpg', array('alt' => 'Projeto de combate a incêndio', 'style' => 'height: 650px;')); ?>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12 project_types_text">
+            <div class="col-md-4 col-xs-12 project_types_text">
                 <h2><span class="icon-target"></span> Energia solar fotovoltaica</h2>
                 <p>Já pensou em usar o ar-condicionado sem peso na consciência e na conta de energia elétrica?<br>
                     O sistema fotovoltaico transforma energia solar em elétrica, que é uma energia totalmente limpa e renovável. O sistema possibilita
                     que a energia excedente seja devolvida a rede pública.
                 </p>
                 <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="card-solar">
+                    <div class="col-md-12 col-xs-12 mb-2 mt-3">
+                        <div class="card-solar d-block">
                             <p>Investimento com alto retorno</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                        <div class="card-solar">
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="card-solar d-block">
                             <p>Valorização imediata do seu imóvel</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                        <div class="card-solar">
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="card-solar d-block">
                             <p>Painel com vida útil de até 40 anos</p>
                         </div>
                     </div>
