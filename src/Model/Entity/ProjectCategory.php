@@ -8,6 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $title
+ * @property int $order
  * @property bool $enabled
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
@@ -28,6 +29,7 @@ class ProjectCategory extends Entity
     protected $_accessible = [
         'title' => true,
         'enabled' => true,
+        'order' => true,
         'created' => true,
         'modified' => true,
         'projects' => true

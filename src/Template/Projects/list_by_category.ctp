@@ -44,7 +44,7 @@
     </div>
     <?php if (!empty($projectCategories)) : ?>
         <div class="row">
-            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
+            <?php echo $this->element('Projects/categories_buttons', array('projectCategories' => $projectCategories)); ?>
         </div>
     <?php endif; ?>
 </section>

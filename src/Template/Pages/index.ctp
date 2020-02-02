@@ -12,7 +12,7 @@ if (!empty($testimonials)) {
     echo $this->element('Home/testimonials');
 }
 echo $this->element('Home/video');
-if (!empty($contributors) && !$this->request->is('mobile')) {
+if (!empty($contributors)) {
     echo $this->element('Home/contributors');
 }
 echo $this->element('Default/contact');

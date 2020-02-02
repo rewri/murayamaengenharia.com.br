@@ -64,9 +64,14 @@ class ProjectCategoriesTable extends Table
             ->allowEmptyString('title', false);
 
         $validator
+            ->integer('order')
+            ->allowEmptyString('enabled', false);
+
+        $validator
             ->boolean('enabled')
             ->allowEmptyString('enabled', false);
 
         return $validator;
     }
+
 }

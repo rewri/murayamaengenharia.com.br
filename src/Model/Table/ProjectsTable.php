@@ -145,4 +145,5 @@ class ProjectsTable extends Table
         );
         return $this->find('all', $query);
     }
+
 }

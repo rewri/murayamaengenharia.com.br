@@ -4,16 +4,19 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Budget Entity
+ * ProjectImage Entity
  *
  * @property int $id
- * @property string $name
- * @property string $phone
- * @property string $email
- * @property string $description
+ * @property int $project_id
+ * @property string $image
+ * @property int|null $order
+ * @property bool $enabled
  * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Project $project
  */
-class Budget extends Entity
+class ProjectImage extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -25,10 +28,12 @@ class Budget extends Entity
      * @var array
      */
     protected $_accessible = [
-        'name' => true,
-        'phone' => true,
-        'email' => true,
-        'description' => true,
-        'created' => true
+        'project_id' => true,
+        'image' => true,
+        'order' => true,
+        'enabled' => true,
+        'created' => true,
+        'modified' => true,
+        'project' => true
     ];
 }

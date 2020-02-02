@@ -7,13 +7,8 @@
     </div>
     <div class="row">
         <?php if (!empty($projectCategories)) : ?>
-            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
+            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories, 'projects' => $projectsToImages)); ?>
         <?php endif; ?>
-        <?php foreach ($projects as $row) : ?>
-        <div class="col-md-4 col-xs-12">
-            <?php echo $this->element('Projects/card', array('data' => $row)); ?>
-        </div>
-        <?php endforeach; ?>
     </div>
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center">

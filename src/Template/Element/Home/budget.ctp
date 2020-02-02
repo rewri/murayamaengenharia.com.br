@@ -8,31 +8,37 @@
             <div class="col-md-6 col-xs-12">
                 <p class="pb-3">Para atender cada vez melhor os clientes em suas necessidades, a <strong>Murayama Engenharia</strong> oferece:</p>
                 <ul>
-                    <li class="pb-4"><span class="icon-arrow-right pr-1"></span> Soluções completas no desenvolvimento de projetos que atendam às estratégias de negócio dos clientes.</li>
-                    <li class="pb-4"><span class="icon-arrow-right pr-1"></span> Agilidade no desenvolvimento e formatação de projetos e "sonhos", buscando até mesmo antecipar-se às demandas.</li>
-                    <li class="pb-4"><span class="icon-arrow-right pr-1"></span> Expertise na estruturação de parcerias para o projeto e melhor gerenciamento,  com foco na redução de custos, diminuição de perdas e gerenciamento de tempo.</li>
+                    <li class="pb-5"><span class="icon-arrow-right pr-1"></span> Soluções completas no desenvolvimento de projetos que atendam às estratégias de negócio dos clientes.</li>
+                    <li class="pb-5"><span class="icon-arrow-right pr-1"></span> Agilidade no desenvolvimento e formatação de projetos e "sonhos", buscando até mesmo antecipar-se às demandas.</li>
+                    <li class="pb-5"><span class="icon-arrow-right pr-1"></span> Expertise na estruturação de parcerias para o projeto e melhor gerenciamento,  com foco na redução de custos, diminuição de perdas e gerenciamento de tempo.</li>
                 </ul>
                 <p class="pt-2">Por isso, preencha o formulário, solicite agora seu <strong>orçamento grátis e sem compromisso</strong> e brevemente nossos profissionais entrarão em contato com você!</p>
             </div>
             <div class="col-md-6 col-xs-12" id="budget-form-div">
                 <?php echo $this->Form->create('Budget', array('url' => array('controller' => 'pages', 'action' => 'budget'), 'id' => 'budget-form')); ?>
                     <div class="row">
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-12 col-xs-12">
                             <div class="form-group mb-4">
-                                <label for="name">Seu nome</label>
+                                <label for="name">Seu nome *</label>
                                 <?php echo $this->Form->control('name', array('class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => 'Nome completo'))?>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-5 col-xs-12">
                             <div class="form-group mb-4">
-                                <label for="phone">Seu telefone</label>
+                                <label for="phone">Seu telefone *</label>
                                 <?php echo $this->Form->control('phone', array('type' => 'tel', 'class' => 'form-control phone', 'required' => true, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx'))?>
                                 <?php echo $this->Form->control('phone_captcha', array('type' => 'tel', 'class' => 'form-control', 'required' => false, 'label' => false, 'placeholder' => '(xx) xxxxx.xxxx', 'id' => 'phone_captcha'))?>
                             </div>
                         </div>
+                        <div class="col-md-7 col-xs-12">
+                            <div class="form-group mb-4">
+                                <label for="phone">Seu email *</label>
+                                <?php echo $this->Form->control('email', array('type' => 'email', 'class' => 'form-control', 'required' => true, 'label' => false, 'placeholder' => 'email@email.com'))?>
+                            </div>
+                        </div>
                         <div class="col-md-12 col-xs-12">
                             <div class="form-group mb-4">
-                                <label for="description">Breve descrição da obra</label>
+                                <label for="description">Breve descrição da obra *</label>
                                 <?php echo $this->Form->textarea('description', array('class' => 'form-control', 'rows' => 3, 'required' => true, 'label' => false, 'placeholder' => 'Ex.: casa térrea com sala, sala de jantar, cozinha, banheiro, 3 quartos e lavanderia em terreno de 10x25m.'))?>
                             </div>
                         </div>
