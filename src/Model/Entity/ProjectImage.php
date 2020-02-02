@@ -4,18 +4,19 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * ProjectCategory Entity
+ * ProjectImage Entity
  *
  * @property int $id
- * @property string $title
- * @property int $order
+ * @property int $project_id
+ * @property string $image
+ * @property int|null $order
  * @property bool $enabled
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
- * @property \App\Model\Entity\Project[] $projects
+ * @property \App\Model\Entity\Project $project
  */
-class ProjectCategory extends Entity
+class ProjectImage extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -27,11 +28,12 @@ class ProjectCategory extends Entity
      * @var array
      */
     protected $_accessible = [
-        'title' => true,
-        'enabled' => true,
+        'project_id' => true,
+        'image' => true,
         'order' => true,
+        'enabled' => true,
         'created' => true,
         'modified' => true,
-        'projects' => true
+        'project' => true
     ];
 }

@@ -20,7 +20,6 @@ class PagesController extends AppController
         $this->loadModel('ProjectCategories');
         $this->loadModel('Contributors');
         $this->loadModel('Budgets');
-
         $testimonials = $this->Testimonials->getAll(3)->toArray();
         $this->set(compact('testimonials'));
     }
@@ -30,9 +29,10 @@ class PagesController extends AppController
         $this->viewBuilder()->setLayout('home');
         $projectsLimit = $this->request->is('mobile') ? 3 : 6;
         $projects = $this->Projects->getAll($projectsLimit)->toArray();
-        $projectCategories = $this->ProjectCategories->find('all')->order('rand()')->toArray();
+        $projectsToImages = $this->Projects->getAll(50)->toArray();
+        $projectCategories = $this->ProjectCategories->find('all')->order('order')->toArray();
         $contributors = $this->Contributors->getAll()->toArray();
-        $this->set(compact('projects', 'projectCategories', 'contributors'));
+        $this->set(compact('projects', 'projectCategories', 'contributors', 'projectsToImages'));
     }
 
     public function about()

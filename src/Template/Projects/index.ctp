@@ -16,9 +16,6 @@
         </div>
     </div>
     <div class="row mt-5" id="projects">
-        <?php if (!empty($projectCategories)) : ?>
-            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
-        <?php endif; ?>
         <?php if (!empty($projects)) : ?>
             <?php foreach ($projects as $row) : ?>
                 <div class="col-md-4 col-xs-12">
@@ -26,6 +23,14 @@
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>
+
+        <?php if (!empty($projectCategories)) : ?>
+             <div class="col-md-12 col-xs-12 text-left mt-5 mb-2 pt-5">
+                <h4>CATEGORIAS</h4>
+            </div>
+            <?php echo $this->element('Projects/categories', array('projectCategories' => $projectCategories)); ?>
+        <?php endif; ?>
+
     </div>
 </section>
 <?php echo $this->element('Default/numbers'); ?>
