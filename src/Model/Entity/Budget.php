@@ -9,6 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property string $phone
+ * @property string $email
  * @property string $description
  * @property \Cake\I18n\FrozenTime $created
  */
@@ -26,6 +27,7 @@ class Budget extends Entity
     protected $_accessible = [
         'name' => true,
         'phone' => true,
+        'email' => true,
         'description' => true,
         'created' => true
     ];

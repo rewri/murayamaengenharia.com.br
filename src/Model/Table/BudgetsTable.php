@@ -64,6 +64,12 @@ class BudgetsTable extends Table
             ->allowEmptyString('phone', false);
 
         $validator
+            ->scalar('email')
+            ->maxLength('email', 80)
+            ->requirePresence('email', 'create')
+            ->allowEmptyString('email', false);
+
+        $validator
             ->scalar('description')
             ->requirePresence('description', 'create')
             ->allowEmptyString('description', false);

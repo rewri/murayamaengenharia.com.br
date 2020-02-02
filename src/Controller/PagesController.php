@@ -82,6 +82,7 @@ class PagesController extends AppController
                             <h1>Contato para solicitação de orçamento:</h1>
                             <p><strong>Nome:</strong> {$data['name']}</p>
                             <p><strong>Fone:</strong> {$data['phone']}</p>
+                            <p><strong>Email:</strong> {$data['email']}</p>
                             <p><strong>Descrição:</strong> {$data['description']}</p>
                             <p><strong>Data:</strong> {$created}</p>
                         ";
