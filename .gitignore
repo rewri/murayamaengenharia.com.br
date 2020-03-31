@@ -41,3 +41,4 @@ nbproject/*
 
 /node_modules/*
 .history
+/webroot/img/projects/*
