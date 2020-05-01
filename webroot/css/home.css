@@ -156,7 +156,7 @@
 #project_types #project_types_top {
     margin-top: 120px;
 }
-#project_types #project_types_bottom {
+#project_types .project_types_bottom {
     margin-bottom: 90px;
 }
 .project_types_image {
@@ -390,11 +390,20 @@
     #project_types #project_types_top {
         margin-top: 10px;
     }
-    #project_types #project_types_bottom {
+    #project_types .project_types_bottom {
         margin-bottom: 20px;
     }
-     #project_types #project_types_bottom {
-        margin-bottom: 20px;
+
+    #project_types a.mobile-contact-btn {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #3c5985;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .project_types_image {
