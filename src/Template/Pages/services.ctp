@@ -74,7 +74,7 @@
 
         </div>
 
-        <div class="row" id="project_types_bottom">
+        <div class="row project_types_bottom">
 
             <div class="col-md-3 col-xs-12 p-0">
                 <div class="project_types_image">
@@ -102,7 +102,7 @@
 
         </div>
 
-        <div class="row" id="project_types_bottom">
+        <div class="row project_types_bottom">
             <div class="col-md-8 col-xs-12 p-0">
                 <div class="project_types_image">
                     <?php echo $this->Html->image('home/solar2.jpg', array('alt' => 'Projeto de combate a incêndio', 'style' => 'height: 650px;')); ?>
@@ -130,6 +130,61 @@
                             <p>Painel com vida útil de até 40 anos</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row project_types_bottom">
+            <div class="col-md-4 col-xs-12 project_types_text">
+                <h2><span class="icon-target"></span> Engenharia, Assessoria e Consultoria</h2>
+                <p>A Avalize desempenha a função de assessoria e consultoria de laudos técnicos e licenças, tanto no âmbito civil, ambiental, bombeiros e segurança do trabalho.</p>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 mb-3 mt-5">
+                        <p class="m-0">Fale conosco:</p>
+                    </div>
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="d-block">
+                            <p class="m-0 pb-2" style="font-size: 1.2em">
+                                <a href="https://web.whatsapp.com/send?phone=5514981412793" title="Chamar no Whats" target="_blank" style="color: #1d3045">
+                                    <i class="fab fa-whatsapp whatsapp-icon"></i> (14) 98141.2793 - Guilherme
+                                </a>
+                            </p>
+                            <p class="m-0 d-block d-sm-none phone-call">
+                                <a href="https://web.whatsapp.com/send?phone=5514981412793" class="mobile-contact-btn">
+                                    <span class="fab fa-whatsapp pr-2"></span> Chamar
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="d-block">
+                            <p class="m-0 pb-2" style="font-size: 1.2em">
+                                <a href="https://web.whatsapp.com/send?phone=5514988220204" title="Chamar no Whats" target="_blank" style="color: #1d3045">
+                                    <i class="fab fa-whatsapp whatsapp-icon"></i> (14) 98822.0204 - Mariana
+                                </a>
+                            </p>
+                            <p class="m-0 d-block d-sm-none phone-call">
+                                <a href="https://web.whatsapp.com/send?phone=5514988220204" class="mobile-contact-btn">
+                                    <span class="fab fa-whatsapp pr-2"></span> Chamar
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="d-block">
+                            <p class="m-0 pb-2" style="font-size: 1.2em;"><a href="https://www.instagram.com/engenhariaavalize/" style="color: #1d3045" title="@engenhariaavalize" target="_blank"><span class="fab fa-instagram pr-2"></span>instagram.com/engenhariaavalize</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 mb-2">
+                        <div class="d-block">
+                            <p class="m-0 pb-2" style="font-size: 1.2em"><a href="mailto:engenhariaavalize@gmail.com" style="color: #1d3045" target="_blank"><span class="fa fa-mail-bulk pr-1"></span> engenhariaavalize&commat;gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12 p-0">
+                <div class="project_types_image">
+                    <?php echo $this->Html->image('home/avalize.jpg', array('alt' => 'Engenharia, Assessoria e Consultoria', 'style' => 'height: 650px;')); ?>
                 </div>
             </div>
         </div>

@@ -48,12 +48,12 @@ nav .navbar-nav {
 }
 
 nav .main-logo {
-    height: 90px;
+    height: 130px;
     transition: height 1.3s;
 }
 
 nav .main-logo.solid-logo {
-    height: 43px;
+    height: 60px;
     transition: height 1.3s;
 }
 
@@ -367,7 +367,11 @@ nav .nav-link:hover:after {
     }
 
     nav .main-logo {
-        height: 50px;
+        height: 55px;
+    }
+
+    nav .main-logo.solid-logo {
+        height: 55px;
     }
 
     nav .nav-item {

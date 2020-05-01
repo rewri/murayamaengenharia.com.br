@@ -21,7 +21,8 @@ class PagesController extends AppController
         $this->loadModel('Contributors');
         $this->loadModel('Budgets');
         $testimonials = $this->Testimonials->getAll(3)->toArray();
-        $this->set(compact('testimonials'));
+        $mapsApiKey = 'AIzaSyD_wYUjK6OgYaxeqcHkHK2X8Do82247_j8';
+        $this->set(compact('testimonials', 'mapsApiKey'));
     }
 
     public function index()
