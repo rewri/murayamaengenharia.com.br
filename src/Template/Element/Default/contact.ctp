@@ -51,9 +51,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="pb-3"><span class="fa fa-phone-alt"></span> Telefones</h3>
-                        <p class="m-0"><span class="fa fa-phone-alt phone-text-icon"></span> (14) 3813.6812</p>
+                        <p class="m-0"><span class="fa fa-phone-alt phone-text-icon"></span> (14) 3814.0045</p>
                         <p class="m-0 d-block d-sm-none phone-call">
-                            <a href="tel:551438136812" class="mobile-contact-btn">
+                            <a href="tel:551438140045" class="mobile-contact-btn">
                                 <span class="fa fa-phone-alt pr-2"></span> Ligar
                             </a>
                         </p>
